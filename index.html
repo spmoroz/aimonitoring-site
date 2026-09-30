@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Too late to matter: monitoring when imaging AI arrives</title>
+<meta property="og:title" content="Too late to matter: monitoring when imaging AI arrives">
+<meta property="og:description" content="Research page: AI latency, the Too Late rate and a monitoring set for deployed imaging AI (JACR 2026).">
+<meta property="og:image" content="https://aimonitoring.drsergeymorozov.com/images/B_key_numbers_linkedin_1x1.png">
+<meta property="og:url" content="https://aimonitoring.drsergeymorozov.com/">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://aimonitoring.drsergeymorozov.com/">
+<link rel="alternate" type="text/markdown" href="manuscript/manuscript.md">
+<meta name="description" content="Research hub by Sergey Morozov: why the timing of AI results decides whether radiologists can use them, a metric set to monitor it, the JACR 2026 study, open-source code and talks.">
+<style>
+:root{--bg:#fafaf9;--ink:#1a1a1a;--mute:#57534e;--line:#e7e5e4;--acc:#0b5394}
+@media (prefers-color-scheme:dark){:root{--bg:#1c1917;--ink:#f5f5f4;--mute:#a8a29e;--line:#44403c;--acc:#7fb3e6}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.6 system-ui,-apple-system,Segoe UI,Roboto,sans-serif}
+main{max-width:680px;margin:0 auto;padding:48px 20px 64px}
+h1{font-size:1.7rem;line-height:1.25;margin:.2em 0 .4em}h2{font-size:1.1rem;margin:2.2em 0 .5em}
+.k{color:var(--mute);font-size:.9rem}a{color:var(--acc)}
+table{width:100%;border-collapse:collapse;margin:.5em 0}td{padding:.45em .3em;border-top:1px solid var(--line);vertical-align:top}
+td:first-child{font-weight:700;white-space:nowrap;width:8.5em}
+ul{padding-left:1.1em}li{margin:.25em 0}
+.cite{font-size:.92rem;background:rgba(127,127,127,.08);padding:.8em 1em;border-radius:6px}
+footer{margin-top:3em;color:var(--mute);font-size:.85rem;border-top:1px solid var(--line);padding-top:1em}
+.lead{font-size:1.15rem}.layer{margin:.9em 0}.layer b{display:block}.tbd{color:var(--mute);font-style:italic}
+</style>
+</head>
+<body>
+<main>
+<p class="k">Research page · Sergey Morozov, MD PhD MPH</p>
+<h1>Too late to matter: monitoring when imaging AI arrives</h1>
+<p class="lead">An AI result that reaches the radiologist after the report is signed cannot change that report. Algorithm accuracy and speed are necessary, not sufficient: what decides clinical value is whether the result arrives in time, every day, at every site.</p>
+
+<h2>What we found in 4.5 years and 20 centers</h2>
+<p class="k">Morozov et al., Journal of the American College of Radiology, 2026. Multi-vendor AI program, 3R Swiss Imaging Network: ~389,000 AI-processed exams, 58 radiologists.</p>
+<table>
+<tr><td>7.2%</td><td>of AI results arrived after the report was finalized (the "Too Late" rate); 13.2% for chest CT, 3.0% for knee MRI</td></tr>
+<tr><td>29.6% vs 13.6%</td><td>CT and MRI results arrived during or after report finalization more than twice as often as radiography results</td></tr>
+<tr><td>72%</td><td>of the median 2.06-minute total latency was data routing, not the algorithm</td></tr>
+<tr><td>-26% / -18%</td><td>report turnaround time where AI was well integrated: trauma radiography and knee MRI, adjusted for radiologist</td></tr>
+<tr><td>2.94 of 5</td><td>perceived productivity, below neutral, despite the measured time savings</td></tr>
+<tr><td>5 of 9</td><td>AI solutions with stable quarterly latency; the others showed drift, post-deployment convergence or an infrastructure incident</td></tr>
+</table>
+<p class="k">Observational study: associations, not causation. Adoption was 91% of radiologists.</p>
+
+<h2>Dissatisfaction is not always about the algorithm</h2>
+<p>Chest CT had the longest latency (13.1 minutes) and the highest Too Late rate (13.2%), and its Net Promoter Score fell from +38 to -3 between the two 2025 survey waves. The study cannot separate latency from false-positive burden, software changes and small samples. But of these causes, timing is the one a department can measure every day and fix with routing and integration, without changing the algorithm.</p>
+
+<h2>A monitoring set in three layers</h2>
+<p>The paper proposes monitoring deployed AI with metrics that come from data every department already has, plus a short survey:</p>
+<div class="layer"><b>1. Machine time</b>Total latency from scan end to AI result in RIS/PACS, split into data routing and AI processing; quarterly median and coefficient of variation to detect drift.</div>
+<div class="layer"><b>2. Workflow time</b>When the result arrives relative to the report: before creation, during dictation, or after finalization (Too Late rate); report turnaround time with and without AI.</div>
+<div class="layer"><b>3. Radiologist perception</b>Twice-yearly survey: trust, quality and perceived productivity (Likert), and Net Promoter Score per AI tool.</div>
+<p>Reviewed quarterly in a Plan-Do-Check-Act cycle, this set supports the post-market monitoring that the EU AI Act requires for high-risk AI.</p>
+
+<h2>Measure it in your department</h2>
+<p>Open-source code <em>too-late-rate</em> (Python, Apache-2.0) computes latency, the Too Late rate and a drift flag from two HL7 timestamps. The public code release will be linked here.</p>
+
+<h2>Read the article</h2>
+<ul>
+<li>Journal version: <a href="https://doi.org/10.1016/j.jacr.2026.09.026">doi.org/10.1016/j.jacr.2026.09.026</a></li>
+<li>Accepted manuscript, CC BY-NC-ND 4.0: <a href="manuscript/">read online (HTML)</a> · <a href="morozov-jacr-2026-accepted-manuscript.pdf">PDF</a> · <a href="manuscript/manuscript.md">plain text (Markdown)</a></li>
+</ul>
+<p class="cite">Morozov S, Heracleous N, Novarina O, Korka D, Dufour B, Thouly C, Rizk B. AI Latency, Report Turnaround Time, and Adoption in a Multi-Vendor AI Ecosystem: A Multi-Site Observational Study. J Am Coll Radiol. 2026. doi:10.1016/j.jacr.2026.09.026</p>
+
+<h2 id="cite">Cite this study</h2>
+<p class="cite">Morozov S, Heracleous N, Novarina O, Korka D, Dufour B, Thouly C, Rizk B. AI Latency, Report Turnaround Time, and Adoption in a Multi-Vendor AI Ecosystem: A Multi-Site Observational Study. J Am Coll Radiol. 2026. doi:10.1016/j.jacr.2026.09.026</p>
+<p class="k">Download: <a href="cite/citation.bib">BibTeX</a> · <a href="cite/citation.ris">RIS (EndNote, Zotero, Mendeley)</a>. Please cite the published article by its DOI.</p>
+
+<h2 id="images">Images for your talks and posts</h2>
+<p>Four ready-made summary images, redrawn from the authors' data. Each carries the citation, the DOI and a QR code to this page.</p>
+<table>
+<tr><td><a href="images/A_ai_result_arrival_16x9.png">When the AI result arrives</a></td><td>Slide 16:9</td></tr>
+<tr><td><a href="images/D_monitoring_three_layers_16x9.png">Three layers of monitoring</a></td><td>Slide 16:9</td></tr>
+<tr><td><a href="images/B_key_numbers_linkedin_1x1.png">Four key numbers</a></td><td>Square, LinkedIn</td></tr>
+<tr><td><a href="images/C_key_numbers_instagram_4x5.png">Four key numbers</a></td><td>Portrait, Instagram</td></tr>
+</table>
+<p class="k"><a href="images/visual_abstracts_all.pdf">All four as one PDF</a> · <a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Faimonitoring.drsergeymorozov.com">Share this page on LinkedIn</a></p>
+
+<h2 id="leaders">For department and network leaders</h2>
+<p>A two-page brief: what the study found and five things to measure in your own department. <a href="brief/executive-brief.pdf">Executive brief (PDF)</a></p>
+
+<h2 id="use">Use of these materials</h2>
+<p class="k">The accepted manuscript and the images are shared under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/">CC BY-NC-ND 4.0</a>. You may read, print and share them unchanged, show them in non-commercial teaching and talks, and post them on social media, always with credit (authors, title, journal, DOI, licence). You may not share changed versions or use them commercially, for example in vendor sales material, paid courses or marketing. For other uses, ask by e-mail. The publisher's PDF is not covered by this licence; the published article is the version of record.</p>
+
+<h2>Talks on this topic</h2>
+<p class="k">Upcoming</p>
+<ul>
+<li>CLINICCAI at MICCAI 2026, Strasbourg, 29 September 2026</li>
+<li>EuSoMII Annual Meeting 2026, Heraklion, 10 October 2026: "Temporal Misalignment Between AI Output Delivery and Radiologist Workflow"</li>
+<li><strong>IMAGINE Annual Event 2026, Philips Stadium, Eindhoven, 26 October 2026, 10:00 CET</strong>: keynote "From clearance to clinical practice: Closing the gap between large-scale AI clearances and routine departmental use" · <a href="https://imagine-medtech.org/event/imagine-annual-event/">programme</a></li>
+<li>RSNA 2026, Chicago, 30 November 2026: poster</li>
+</ul>
+<p class="k">Past</p>
+<ul>
+<li>HLTH.rad Stage, HLTH Europe, Amsterdam, 15 to 18 June 2026: "What are we actually getting from AI? Seven years, 100+ centers, one honest answer"</li>
+<li>HaDEA EEHRxF Workshop 1, Interoperability and Technical Standards, Panel 1, 24 April 2026: "EHR Interoperability in Practice: Lessons from Radiology"</li>
+</ul>
+
+<h2>Disclosures</h2>
+<p class="k">Funding and conflicts of interest are declared in the article. S.M. provides R&amp;D consulting services to 3R Swiss Imaging Network via Medlogic.</p>
+
+<footer>Questions about the research: <a href="mailto:dr.morozov.sergey@gmail.com">dr.morozov.sergey@gmail.com</a> · <a href="https://www.linkedin.com/in/sergey-morozov">LinkedIn</a><br>Personal, non-commercial research page. No services are offered here.</footer>
+</main>
+</body>
+</html>

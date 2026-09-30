@@ -1,0 +1,13 @@
+# Too late to matter: monitoring when imaging AI arrives
+
+> Personal, non-commercial research page of Sergey Morozov (MD, PhD, MPH). Topic: monitoring deployed imaging AI by the timing of its results (AI latency, the "Too Late" rate, report turnaround time, radiologist perception). Main source: Morozov S, Heracleous N, Novarina O, Korka D, Dufour B, Thouly C, Rizk B. AI Latency, Report Turnaround Time, and Adoption in a Multi-Vendor AI Ecosystem: A Multi-Site Observational Study. J Am Coll Radiol. 2026. doi:10.1016/j.jacr.2026.09.026. Accepted manuscript, CC BY-NC-ND 4.0.
+
+## Documents
+- [Research page](https://aimonitoring.drsergeymorozov.com/): summary, key numbers, monitoring metric set, talks
+- [Accepted manuscript, HTML](https://aimonitoring.drsergeymorozov.com/manuscript/): full text with tables
+- [Accepted manuscript, Markdown](https://aimonitoring.drsergeymorozov.com/manuscript/manuscript.md): full text for machine reading
+- [Accepted manuscript, PDF](https://aimonitoring.drsergeymorozov.com/morozov-jacr-2026-accepted-manuscript.pdf)
+
+## Notes
+- Observational study: associations, not causation.
+- Cite the published journal article: https://doi.org/10.1016/j.jacr.2026.09.026
