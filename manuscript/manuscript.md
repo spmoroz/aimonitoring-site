@@ -657,7 +657,7 @@ Credit means: the authors, the title, the journal, a link to the licence, and th
 - share changed versions of the document or figures (for example edited, redrawn, relabelled or translated);
 - use them for commercial purposes, for example in vendor sales material, paid courses or marketing.
 
-**Other uses.** For any use not covered here, ask: dr.morozov.sergey@gmail.com. Uses that the law already allows without permission (for example quotation under copyright exceptions) are not limited by this licence.
+**Other uses.** For any use of this manuscript not covered here, request permission from the publisher (Elsevier). Uses that the law already allows without permission (for example quotation under copyright exceptions) are not limited by this licence.
 
 **Version of record.** The final article published in the *Journal of the American College of Radiology* is the version of record. Please cite it by its DOI: <https://doi.org/10.1016/j.jacr.2026.09.026>. The publisher's PDF is not covered by this licence.
 
