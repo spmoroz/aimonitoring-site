@@ -1,9 +1,9 @@
-# Too late to matter: monitoring when imaging AI arrives
+# Right result, right moment: monitoring that helps radiology AI deliver
 
-> Personal, non-commercial research page of Sergey Morozov (MD, PhD, MPH). Topic: monitoring deployed imaging AI by the timing of its results (AI latency, the "Too Late" rate, report turnaround time, radiologist perception). Main source: Morozov S, Heracleous N, Novarina O, Korka D, Dufour B, Thouly C, Rizk B. AI Latency, Report Turnaround Time, and Adoption in a Multi-Vendor AI Ecosystem: A Multi-Site Observational Study. J Am Coll Radiol. 2026. doi:10.1016/j.jacr.2026.09.026. Accepted manuscript, CC BY-NC-ND 4.0.
+> Personal, non-commercial research page of Sergey Morozov (MD, PhD, MPH). Topic: monitoring that helps deployed radiology AI deliver everyday value: what worked and what needs work in a 20-center network over 4.5 years, five things any department can measure, and a three-layer monitoring set (machine time, workflow time, radiologist perception). Main source: Morozov S, Heracleous N, Novarina O, Korka D, Dufour B, Thouly C, Rizk B. AI Latency, Report Turnaround Time, and Adoption in a Multi-Vendor AI Ecosystem: A Multi-Site Observational Study. J Am Coll Radiol. 2026. doi:10.1016/j.jacr.2026.09.026. Accepted manuscript, CC BY-NC-ND 4.0.
 
 ## Documents
-- [Research page](https://aimonitoring.drsergeymorozov.com/): summary, key numbers, monitoring metric set, talks
+- [Research page](https://aimonitoring.drsergeymorozov.com/): what works, what needs work, five actions for departments, monitoring set in three layers, talks
 - [Accepted manuscript, HTML](https://aimonitoring.drsergeymorozov.com/manuscript/): full text with tables
 - [Accepted manuscript, Markdown](https://aimonitoring.drsergeymorozov.com/manuscript/manuscript.md): full text for machine reading
 - [Accepted manuscript, PDF](https://aimonitoring.drsergeymorozov.com/morozov-jacr-2026-accepted-manuscript.pdf)

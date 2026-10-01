@@ -3,15 +3,15 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Too late to matter: monitoring when imaging AI arrives</title>
-<meta property="og:title" content="Too late to matter: monitoring when imaging AI arrives">
-<meta property="og:description" content="Research page: AI latency, the Too Late rate and a monitoring set for deployed imaging AI (JACR 2026).">
+<title>Right result, right moment: monitoring that helps radiology AI deliver</title>
+<meta property="og:title" content="Right result, right moment: monitoring that helps radiology AI deliver">
+<meta property="og:description" content="What a 20-center network learned in 4.5 years: what works, what needs work, and five things any department can measure. Research page for the JACR 2026 study.">
 <meta property="og:image" content="https://aimonitoring.drsergeymorozov.com/images/B_key_numbers_linkedin_1x1.png">
 <meta property="og:url" content="https://aimonitoring.drsergeymorozov.com/">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="canonical" href="https://aimonitoring.drsergeymorozov.com/">
 <link rel="alternate" type="text/markdown" href="manuscript/manuscript.md">
-<meta name="description" content="Research hub by Sergey Morozov: why the timing of AI results decides whether radiologists can use them, a metric set to monitor it, the JACR 2026 study, open-source code and talks.">
+<meta name="description" content="Research hub by Sergey Morozov: what a 20-center radiology network learned in 4.5 years of multi-vendor AI, five things any department can measure, a three-layer monitoring set, the JACR 2026 study, open-source code and talks.">
 <style>
 :root{--bg:#fafaf9;--ink:#1a1a1a;--mute:#57534e;--line:#e7e5e4;--acc:#0b5394}
 @media (prefers-color-scheme:dark){:root{--bg:#1c1917;--ink:#f5f5f4;--mute:#a8a29e;--line:#44403c;--acc:#7fb3e6}}
@@ -21,7 +21,7 @@ h1{font-size:1.7rem;line-height:1.25;margin:.2em 0 .4em}h2{font-size:1.1rem;marg
 .k{color:var(--mute);font-size:.9rem}a{color:var(--acc)}
 table{width:100%;border-collapse:collapse;margin:.5em 0}td{padding:.45em .3em;border-top:1px solid var(--line);vertical-align:top}
 td:first-child{font-weight:700;white-space:nowrap;width:8.5em}
-ul{padding-left:1.1em}li{margin:.25em 0}
+ul,ol{padding-left:1.1em}li{margin:.25em 0}
 .cite{font-size:.92rem;background:rgba(127,127,127,.08);padding:.8em 1em;border-radius:6px}
 footer{margin-top:3em;color:var(--mute);font-size:.85rem;border-top:1px solid var(--line);padding-top:1em}
 .lead{font-size:1.15rem}.layer{margin:.9em 0}.layer b{display:block}.tbd{color:var(--mute);font-style:italic}
@@ -30,33 +30,45 @@ footer{margin-top:3em;color:var(--mute);font-size:.85rem;border-top:1px solid va
 <body>
 <main>
 <p class="k">Research page · Sergey Morozov, MD PhD MPH</p>
-<h1>Too late to matter: monitoring when imaging AI arrives</h1>
-<p class="lead">An AI result that reaches the radiologist after the report is signed cannot change that report. Algorithm accuracy and speed are necessary, not sufficient: what decides clinical value is whether the result arrives in time, every day, at every site.</p>
+<h1>Right result, right moment: monitoring that helps radiology AI deliver</h1>
+<p class="lead">What a 20-center network learned in 4.5 years, and five things any department can measure.</p>
+<p>In a 20-center network, 91% of radiologists adopted AI, and where AI was integrated into the reading workflow, reports were finalized faster. The gap: 7.2% of AI results still arrived after the report was finalized, mostly because of data routing rather than the algorithm. Timing is something a department can measure every day and improve with routing and integration.</p>
 
-<h2>What we found in 4.5 years and 20 centers</h2>
-<p class="k">Morozov et al., Journal of the American College of Radiology, 2026. Multi-vendor AI program, 3R Swiss Imaging Network: ~389,000 AI-processed exams, 58 radiologists.</p>
+<h2>What works</h2>
+<p class="k">Morozov et al., Journal of the American College of Radiology, 2026. Multi-vendor AI program, 3R Swiss Imaging Network, 20 centers: ~389,000 AI-processed exams, 58 radiologists.</p>
 <table>
-<tr><td>7.2%</td><td>of AI results arrived after the report was finalized (the "Too Late" rate); 13.2% for chest CT, 3.0% for knee MRI</td></tr>
-<tr><td>29.6% vs 13.6%</td><td>CT and MRI results arrived during or after report finalization more than twice as often as radiography results</td></tr>
-<tr><td>72%</td><td>of the median 2.06-minute total latency was data routing, not the algorithm</td></tr>
-<tr><td>-26% / -18%</td><td>report turnaround time where AI was well integrated: trauma radiography and knee MRI, adjusted for radiologist</td></tr>
-<tr><td>2.94 of 5</td><td>perceived productivity, below neutral, despite the measured time savings</td></tr>
-<tr><td>5 of 9</td><td>AI solutions with stable quarterly latency; the others showed drift, post-deployment convergence or an infrastructure incident</td></tr>
+<tr><td>91%</td><td>of radiologists adopted AI (active adoption 91.4%, 53 of 58)</td></tr>
+<tr><td>-26% / -18%</td><td>lower median report turnaround time where AI was integrated into the reading workflow: trauma radiography and knee MRI, adjusted for radiologist</td></tr>
+<tr><td>0.69 FTE</td><td>estimated annual reporting capacity from trauma radiography alone (0.46 FTE radiologist-adjusted), at an annual platform cost equivalent to 23-25% of one radiologist FTE salary</td></tr>
+<tr><td>80.6%</td><td>of AI results were available before the report was created</td></tr>
 </table>
-<p class="k">Observational study: associations, not causation. Adoption was 91% of radiologists.</p>
 
-<h2>Dissatisfaction is not always about the algorithm</h2>
-<p>Chest CT had the longest latency (13.1 minutes) and the highest Too Late rate (13.2%), and its Net Promoter Score fell from +38 to -3 between the two 2025 survey waves. The study cannot separate latency from false-positive burden, software changes and small samples. But of these causes, timing is the one a department can measure every day and fix with routing and integration, without changing the algorithm.</p>
+<h2>What needs work, and how to fix it</h2>
+<div class="layer"><b>7.2% of AI results arrived after the report was finalized (the Too Late rate), while 80.6% were available before the report was created.</b>What it means: these results came too late to change the report they belonged to. Action: measure the share of results available before reporting and the Too Late rate every month, and bring the late share down.</div>
+<div class="layer"><b>72% of the median 2.06-minute latency was data routing, not the algorithm.</b>What it means: most of the delay sits in integration, so it can be reduced without changing the algorithm. Action: prefer automated push routing, and ask IT and each supplier for routing and inference time separately.</div>
+<div class="layer"><b>CT and MRI results arrived during or after report finalization more often than radiography results (29.6% vs 13.6%).</b>What it means: in cross-sectional imaging, the largest share of results still arrives while the radiologist is reporting or after. Action: set time-to-display targets per modality in contracts and acceptance tests, and start routing work with CT and MRI.</div>
+<div class="layer"><b>Five of nine AI solutions had stable quarterly latency; four did not.</b>The four showed progressive latency drift, post-deployment convergence, or a temporary infrastructure incident with full recovery. What it means: latency changes after go-live and is invisible without a routine check. Action: review latency per solution every quarter, keep metric definitions versioned so quarters stay comparable, and put latency targets in contracts.</div>
+<div class="layer"><b>Perceived productivity stayed below neutral (2.94 of 5) despite measured time savings.</b>What it means: radiologists do not yet feel the gains that the timestamps show. Action: share the measured results with radiologists, and use training and regular feedback.</div>
+<p class="k">Observational study: associations, not causation.</p>
+
+<h2>Five actions for your department</h2>
+<ol>
+<li><b>Measure the share of AI results available before reporting, and the Too Late rate.</b> For every AI-processed exam, compare two HL7 timestamps: when the AI result became available and when the report was created and finalized.</li>
+<li><b>Set a time-to-display target in contracts and acceptance tests:</b> the maximum minutes from end of scan to AI result on the reading screen, per modality.</li>
+<li><b>Prefer push routing and integration.</b> Send studies to AI automatically at acquisition and return results into the tools radiologists already use. Routing, not the algorithm, is where most of the time goes.</li>
+<li><b>Review latency stability every quarter</b> for each AI solution, with versioned metric definitions and radiologist feedback, and decide what to tune, upgrade or replace.</li>
+<li><b>Survey radiologists twice a year:</b> trust, quality, productivity and a recommendation score for each tool, and share the measured results with them.</li>
+</ol>
 
 <h2>A monitoring set in three layers</h2>
 <p>The paper proposes monitoring deployed AI with metrics that come from data every department already has, plus a short survey:</p>
-<div class="layer"><b>1. Machine time</b>Total latency from scan end to AI result in RIS/PACS, split into data routing and AI processing; quarterly median and coefficient of variation to detect drift.</div>
+<div class="layer"><b>1. Machine time</b>Total latency from scan end to AI result in RIS/PACS, split into data routing and AI processing; quarterly median and coefficient of variation to check latency stability.</div>
 <div class="layer"><b>2. Workflow time</b>When the result arrives relative to the report: before creation, during dictation, or after finalization (Too Late rate); report turnaround time with and without AI.</div>
 <div class="layer"><b>3. Radiologist perception</b>Twice-yearly survey: trust, quality and perceived productivity (Likert), and Net Promoter Score per AI tool.</div>
 <p>Reviewed quarterly in a Plan-Do-Check-Act cycle, this set supports the post-market monitoring that the EU AI Act requires for high-risk AI.</p>
 
 <h2>Measure it in your department</h2>
-<p>Open-source code <em>too-late-rate</em> (Python, Apache-2.0) computes latency, the Too Late rate and a drift flag from two HL7 timestamps. The public code release will be linked here.</p>
+<p>Open-source code <em>too-late-rate</em> (Python, Apache-2.0) computes latency, the arrival of each AI result relative to the report (including the Too Late rate) and a quarterly stability flag from HL7 timestamps. The public code release will be linked here.</p>
 
 <h2>Read the article</h2>
 <ul>
@@ -73,14 +85,14 @@ footer{margin-top:3em;color:var(--mute);font-size:.85rem;border-top:1px solid va
 <p>Four ready-made summary images, redrawn from the authors' data. Each carries the citation, the DOI and a QR code to this page.</p>
 <table>
 <tr><td><a href="images/A_ai_result_arrival_16x9.png">When the AI result arrives</a></td><td>Slide 16:9</td></tr>
-<tr><td><a href="images/D_monitoring_three_layers_16x9.png">Three layers of monitoring</a></td><td>Slide 16:9</td></tr>
+<tr><td><a href="images/D_monitoring_three_layers_16x9.png">Monitoring that helps AI deliver: three layers</a></td><td>Slide 16:9</td></tr>
 <tr><td><a href="images/B_key_numbers_linkedin_1x1.png">Four key numbers</a></td><td>Square, LinkedIn</td></tr>
 <tr><td><a href="images/C_key_numbers_instagram_4x5.png">Four key numbers</a></td><td>Portrait, Instagram</td></tr>
 </table>
 <p class="k"><a href="images/visual_abstracts_all.pdf">All four as one PDF</a> · <a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Faimonitoring.drsergeymorozov.com">Share this page on LinkedIn</a></p>
 
 <h2 id="leaders">For department and network leaders</h2>
-<p>A two-page brief: what the study found and five things to measure in your own department. <a href="brief/executive-brief.pdf">Executive brief (PDF)</a></p>
+<p>A two-page brief: what worked, what needs work, and five things to measure in your own department. <a href="brief/executive-brief.pdf">Executive brief (PDF)</a></p>
 
 <h2 id="use">Use of these materials</h2>
 <p class="k">The accepted manuscript and the images are shared under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/">CC BY-NC-ND 4.0</a>. You may read, print and share them unchanged, show them in non-commercial teaching and talks, and post them on social media, always with credit (authors, title, journal, DOI, licence). You may not share changed versions or use them commercially, for example in vendor sales material, paid courses or marketing. For other uses of the article, request permission from the publisher (Elsevier). For other uses of the images or the brief, contact the author. The publisher's PDF is not covered by this licence; the published article is the version of record.</p>
