@@ -6,10 +6,10 @@ Accepted manuscript · Author distribution copy
 
 - Sergey Morozov<sup>1</sup>, General Manager
 - Natalie Heracleous<sup>2</sup>, Senior Researcher
-- Octave Novarina<sup>2</sup>, AI engineer
 - Diana Korka<sup>2</sup>, Data analyst
-- Benoît Dufour<sup>2</sup>, Workflow manager
 - Cyril Thouly<sup>2</sup>, COO
+- Benoît Dufour<sup>2</sup>, Workflow manager
+- Octave Novarina<sup>2</sup>, AI engineer
 - Benoît Rizk<sup>2</sup>, CMIO and radiologist
 
 <sup>1</sup> Medlogic, Brussels, Belgium 
@@ -25,7 +25,7 @@ This is the accepted manuscript (the authors' version after peer review, before 
 
 **How to cite**
 
-Morozov S, Heracleous N, Novarina O, Korka D, Dufour B, Thouly C, Rizk B. AI Latency, Report Turnaround Time, and Adoption in a Multi-Vendor AI Ecosystem: A Multi-Site Observational Study. J Am Coll Radiol. 2026. doi:10.1016/j.jacr.2026.09.026 
+Morozov S, Heracleous N, Korka D, Thouly C, Dufour B, Novarina O, Rizk B. AI Latency, Report Turnaround Time, and Adoption in a Multi-Vendor AI Ecosystem: A Multi-Site Observational Study. J Am Coll Radiol. 2026. doi:10.1016/j.jacr.2026.09.026 
 BibTeX: <https://aimonitoring.drsergeymorozov.com/cite/citation.bib> 
 RIS: <https://aimonitoring.drsergeymorozov.com/cite/citation.ris> 
 Images for talks and posts: <https://aimonitoring.drsergeymorozov.com/#images>
@@ -51,7 +51,7 @@ The authors declare that they had full access to all of the data in this study a
 
 **Author contributions**
 
-Sergey Morozov: conceptualization, methodology, data curation, formal analysis, writing – original draft, writing – review & editing, project administration. Natalie Heracleous: data curation, investigation, formal analysis, writing – review & editing. Octave Novarina: investigation, formal analysis, writing – review & editing. Diana Korka: data curation, investigation, writing – review & editing. Benoît Dufour: resources (operations), project administration, data curation, writing – review & editing. Cyril Thouly: resources (IT infrastructure), data curation, funding acquisition, project administration, writing – review & editing. Benoît Rizk: conceptualization, supervision, project administration, writing – review & editing.
+Sergey Morozov: conceptualization, methodology, data curation, formal analysis, writing – original draft, writing – review & editing, project administration. Natalie Heracleous: data curation, investigation, formal analysis, writing – review & editing. Diana Korka: data curation, investigation, writing – review & editing. Cyril Thouly: resources (IT infrastructure), data curation, funding acquisition, project administration, writing – review & editing. Benoît Dufour: resources (operations), project administration, data curation, writing – review & editing. Octave Novarina: investigation, formal analysis, writing – review & editing. Benoît Rizk: conceptualization, supervision, project administration, writing – review & editing.
 
 **Funding**
 
@@ -663,7 +663,7 @@ Credit means: the authors, the title, the journal, a link to the licence, and th
 
 ### Cite
 
-Morozov S, Heracleous N, Novarina O, Korka D, Dufour B, Thouly C, Rizk B. AI Latency, Report Turnaround Time, and Adoption in a Multi-Vendor AI Ecosystem: A Multi-Site Observational Study. J Am Coll Radiol. 2026. doi:10.1016/j.jacr.2026.09.026
+Morozov S, Heracleous N, Korka D, Thouly C, Dufour B, Novarina O, Rizk B. AI Latency, Report Turnaround Time, and Adoption in a Multi-Vendor AI Ecosystem: A Multi-Site Observational Study. J Am Coll Radiol. 2026. doi:10.1016/j.jacr.2026.09.026
 
 - BibTeX: <https://aimonitoring.drsergeymorozov.com/cite/citation.bib>
 - RIS: <https://aimonitoring.drsergeymorozov.com/cite/citation.ris>
