@@ -25,6 +25,7 @@ ul,ol{padding-left:1.1em}li{margin:.25em 0}
 .cite{font-size:.92rem;background:rgba(127,127,127,.08);padding:.8em 1em;border-radius:6px}
 footer{margin-top:3em;color:var(--mute);font-size:.85rem;border-top:1px solid var(--line);padding-top:1em}
 .lead{font-size:1.15rem}.layer{margin:.9em 0}.layer b{display:block}.tbd{color:var(--mute);font-style:italic}
+figure{margin:1.2em 0}figure img{display:block;width:100%;height:auto;border:1px solid var(--line);border-radius:6px}figcaption{color:var(--mute);font-size:.85rem;margin-top:.4em}
 </style>
 </head>
 <body>
@@ -57,14 +58,14 @@ footer{margin-top:3em;color:var(--mute);font-size:.85rem;border-top:1px solid va
 <li><b>Set a time-to-display target in contracts and acceptance tests:</b> the maximum minutes from end of scan to AI result on the reading screen, per modality.</li>
 <li><b>Prefer push routing and integration.</b> Send studies to AI automatically at acquisition and return results into the tools radiologists already use. Routing, not the algorithm, is where most of the time goes.</li>
 <li><b>Review latency stability every quarter</b> for each AI solution, with versioned metric definitions and radiologist feedback, and decide what to tune, upgrade or replace.</li>
-<li><b>Survey radiologists twice a year:</b> trust, quality, productivity and a recommendation score for each tool, and share the measured results with them.</li>
+<li><b>Survey radiologists quarterly or every six months, not less often:</b> trust, quality, productivity and a recommendation score for each tool, and share the measured results with them.</li>
 </ol>
 
 <h2>A monitoring set in three layers</h2>
 <p>The paper proposes monitoring deployed AI with metrics that come from data every department already has, plus a short survey:</p>
 <div class="layer"><b>1. Machine time</b>Total latency from scan end to AI result in RIS/PACS, split into data routing and AI processing; quarterly median and coefficient of variation to check latency stability.</div>
 <div class="layer"><b>2. Workflow time</b>When the result arrives relative to the report: before creation, during dictation, or after finalization (Too Late rate); report turnaround time with and without AI.</div>
-<div class="layer"><b>3. Radiologist perception</b>Twice-yearly survey: trust, quality and perceived productivity (Likert), and Net Promoter Score per AI tool.</div>
+<div class="layer"><b>3. Radiologist perception</b>Survey quarterly or every six months: trust, quality and perceived productivity (Likert), and Net Promoter Score per AI tool.</div>
 <p>Reviewed quarterly in a Plan-Do-Check-Act cycle, this set supports the post-market monitoring that the EU AI Act requires for high-risk AI.</p>
 
 <h2>Measure it in your department</h2>
@@ -76,6 +77,7 @@ footer{margin-top:3em;color:var(--mute);font-size:.85rem;border-top:1px solid va
 <li>Accepted manuscript, CC BY-NC-ND 4.0: <a href="manuscript/">read online (HTML)</a> · <a href="morozov-jacr-2026-accepted-manuscript.pdf">PDF</a> · <a href="manuscript/manuscript.md">plain text (Markdown)</a></li>
 </ul>
 <p class="cite">Morozov S, Heracleous N, Korka D, Thouly C, Dufour B, Novarina O, Rizk B. AI Latency, Report Turnaround Time, and Adoption in a Multi-Vendor AI Ecosystem: A Multi-Site Observational Study. J Am Coll Radiol. 2026. doi:10.1016/j.jacr.2026.09.026</p>
+<figure><img src="images/jacr-article-page.webp" width="1200" height="657" loading="lazy" alt="Article page of the paper on ScienceDirect, J Am Coll Radiol 2026"><figcaption><a href="https://doi.org/10.1016/j.jacr.2026.09.026">Screenshot of the article page on ScienceDirect (Elsevier), reproduced with permission.</a></figcaption></figure>
 
 <h2 id="cite">Cite this study</h2>
 <p class="cite">Morozov S, Heracleous N, Korka D, Thouly C, Dufour B, Novarina O, Rizk B. AI Latency, Report Turnaround Time, and Adoption in a Multi-Vendor AI Ecosystem: A Multi-Site Observational Study. J Am Coll Radiol. 2026. doi:10.1016/j.jacr.2026.09.026</p>
