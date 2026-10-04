@@ -11,3 +11,4 @@
 ## Notes
 - Observational study: associations, not causation.
 - Cite the published journal article: https://doi.org/10.1016/j.jacr.2026.09.026
+- Open-source code too-late-rate (Apache-2.0): https://github.com/spmoroz/too-late-rate ; archived release: https://doi.org/10.5281/zenodo.23141600
