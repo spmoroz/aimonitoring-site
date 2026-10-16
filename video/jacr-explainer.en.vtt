@@ -1,0 +1,127 @@
+WEBVTT
+
+00:00:02.260 --> 00:00:04.077
+Hello, I am Sergey Morozov.
+
+00:00:04.337 --> 00:00:07.824
+For four and a half years, the 3R Swiss Imaging Network
+
+00:00:08.084 --> 00:00:11.383
+has used AI in everyday radiology. Here's what we learned.
+
+00:00:12.323 --> 00:00:15.671
+When a computer starts thinking slower than we do, we replace it.
+
+00:00:15.931 --> 00:00:19.464
+So what about an AI whose answer arrives after the report is signed?
+
+00:00:20.404 --> 00:00:24.866
+At the 3R Swiss Imaging Network, we measured exactly that in routine work.
+
+00:00:25.126 --> 00:00:26.993
+Four and a half years, 20 centers,
+
+00:00:27.253 --> 00:00:32.731
+10 AI tools from seven vendors, about 389,000 AI-assisted exams.
+
+00:00:33.671 --> 00:00:38.726
+Everyone asks if AI is accurate. Few ask if it arrives in time. And
+
+00:00:38.986 --> 00:00:40.436
+actually used by radiologists.
+
+00:00:41.726 --> 00:00:42.528
+The design:
+
+00:00:42.788 --> 00:00:49.293
+three data sources, triangulated. The AI platform dashboard, 96,874 exams.
+
+00:00:49.553 --> 00:00:56.458
+The radiology information system, 20,909 reports with and without AI used.
+
+00:00:56.718 --> 00:00:59.048
+And 58 radiologists surveyed twice.
+
+00:01:00.038 --> 00:01:05.695
+Three clocks. Clock one, AI latency. 2.06 minutes, median.
+
+00:01:05.955 --> 00:01:11.982
+The algorithm needs about 0. 2. 72% is data routing. A sprinter
+
+00:01:12.242 --> 00:01:13.090
+stuck in traffic.
+
+00:01:14.030 --> 00:01:16.496
+Clock two: Does the result arrive in time?
+
+00:01:16.756 --> 00:01:22.323
+80.6% arrive before the report is started. 7.2% arrive after it is signed.
+
+00:01:22.583 --> 00:01:26.440
+1,584 exams, a first of its kind to our knowledge.
+
+00:01:27.380 --> 00:01:29.939
+Clock three: The radiologist report time.
+
+00:01:30.199 --> 00:01:32.250
+When the result is there in time, it pays.
+
+00:01:32.510 --> 00:01:38.312
+Reports 26% faster in trauma radiography, 18 in knee MRI, adjusted for the radiologist.
+
+00:01:38.572 --> 00:01:43.217
+Trauma radiography alone, an estimated 0.69 of a radiologist a year.
+
+00:01:43.477 --> 00:01:47.563
+That is roughly a three to one return on investment for the platform.
+
+00:01:47.823 --> 00:01:49.180
+Two to one after adjustment.
+
+00:01:50.120 --> 00:01:56.663
+On top of the clocks, we asked the radiologists. 91% use AI and 66% use AI regularly.
+
+00:01:56.923 --> 00:02:02.722
+They rate their AI tools 7.28 out of 10. Yet perceived productivity stays at
+
+00:02:02.982 --> 00:02:05.080
+2.94 out of 5.
+
+00:02:05.340 --> 00:02:10.308
+Economists call it the Jevons paradox. Saved time may turn into more cases.
+
+00:02:11.248 --> 00:02:13.763
+From this triangulation come the monitoring metrics.
+
+00:02:14.023 --> 00:02:16.214
+Three clocks per tool, every quarter.
+
+00:02:16.474 --> 00:02:19.174
+We also propose a standardized radiologist questionnaire.
+
+00:02:19.434 --> 00:02:25.328
+Push studies to AI on completion, put time to display targets in contracts with AI vendors and distributors.
+
+00:02:26.268 --> 00:02:31.081
+And then the paradox. Today, AI can't keep up with the radiologist. Fix that,
+
+00:02:31.341 --> 00:02:35.245
+and with rising volumes, the radiologist may not keep up with AI.
+
+00:02:35.505 --> 00:02:38.251
+Will we still be able to monitor what it does?
+
+00:02:39.441 --> 00:02:42.884
+So we must monitor it and prepare radiologists to work with it.
+
+00:02:43.144 --> 00:02:48.761
+AI should run like a Swiss train, on time, comfortable, and taking us exactly where we need to go.
+
+00:02:50.151 --> 00:02:51.045
+Right result,
+
+00:02:51.305 --> 00:02:56.320
+right moment. From the 3R Swiss Imaging Network in Journal of American College of Radiology.
+
+00:02:56.580 --> 00:02:59.370
+Questions? Write to the 3R research team.
