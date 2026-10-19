@@ -7,7 +7,7 @@
 - [Accepted manuscript, HTML](https://aimonitoring.drsergeymorozov.com/manuscript/): full text with tables
 - [Accepted manuscript, Markdown](https://aimonitoring.drsergeymorozov.com/manuscript/manuscript.md): full text for machine reading
 - [Accepted manuscript, PDF](https://aimonitoring.drsergeymorozov.com/morozov-jacr-2026-accepted-manuscript.pdf)
-- [Video explainer, 3.5 min](https://aimonitoring.drsergeymorozov.com/video/jacr-explainer.mp4), [transcript](https://aimonitoring.drsergeymorozov.com/video/transcript.md): narrated by Sergey Morozov
+- [Video explainer, 3:29](https://aimonitoring.drsergeymorozov.com/video/jacr-explainer.mp4), [transcript](https://aimonitoring.drsergeymorozov.com/video/transcript.md): narrated by Sergey Morozov
 
 ## Notes
 - Observational study: associations, not causation.
