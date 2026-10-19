@@ -1,4 +1,4 @@
-# Transcript: 4.5 years of AI in everyday radiology (3:29)
+# Transcript: 4.5 years of AI in everyday radiology (3.5 min)
 
 Narrated by Sergey Morozov. Explainer of Morozov et al., J Am Coll Radiol 2026, doi:10.1016/j.jacr.2026.09.026. Spoken numbers are rounded; the exact values are in the article.
 
