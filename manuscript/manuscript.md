@@ -36,7 +36,7 @@ Images for talks and posts: <https://aimonitoring.drsergeymorozov.com/#images>
 
 **Corrections**
 
-Corrections submitted by the authors at the proof stage (October 2026) have been applied to this version: wording and citations (references 11, 12, 20 and 29), reference details, typographical corrections in tables, and the supplementary material (eTables 1, 2 and 7, STROBE checklist; eText 1 removed). Authors are listed in the order of the published article. This copy was laid out by the authors for personal distribution. Its layout does not reproduce the journal version; please cite the published article.
+This version includes corrections made by the authors after acceptance. It does not include the publisher's copy-editing, typesetting or formatting. Authors are listed in the order of the published article. This copy was laid out by the authors for personal distribution. Its layout does not reproduce the journal version; please cite the published article.
 
 **Links**
 
@@ -349,47 +349,47 @@ During the preparation of this work the authors used Gemini 3 Pro and Claude Opu
 
 2. Halliday K. 2024 workforce census reports lay bare the challenges facing radiology and clinical oncology. Royal College of Radiologists. Published January 2024. Accessed March 2, 2026. <https://www.rcr.ac.uk/news-policy/latest-updates/2024-workforce-census-reports-lay-bare-the-challenges-facing-radiology-and-clinical-oncology/>
 
-3. Hua D, Petrina N, Young N, Cho J, Poon S. Understanding the factors influencing acceptability of AI in medical imaging domains among healthcare professionals: a scoping review. Artif Intell Med. 2023;147:102698. doi:10.1016/j.artmed.2023.102698
+3. Hua D, Petrina N, Young N, Cho J, Poon S. Understanding the factors influencing acceptability of AI in medical imaging domains among healthcare professionals: A scoping review. *Artificial Intelligence in Medicine*. 11 2023;147:102698-102698. doi:[10.1016/j.artmed.2023.102698](http://dx.doi.org/10.1016/j.artmed.2023.102698)
 
-4. Rawson JV, Smetherman D, Rubin E. Short-term strategies for augmenting the national radiologist workforce. AJR Am J Roentgenol. 2024;222(6):e2430920. doi:10.2214/AJR.24.30920
+4. Rawson JV, Smetherman D, Rubin E. Short-Term Strategies for Augmenting the National Radiologist Workforce. *American Journal of Roentgenology*. 04 2024;222. doi:[10.2214/ajr.24.30920](http://dx.doi.org/10.2214/ajr.24.30920)
 
 5. Brink JA, Hricak H. Radiology 2040. *Radiology*. 12 2022;306:69-72. doi:[10.1148/radiol.222594](http://dx.doi.org/10.1148/radiol.222594)
 
-6. Kalidindi S, Gandhi S. Workforce crisis in radiology in the UK and the strategies to deal with it: is artificial intelligence the saviour? Cureus. 2023;15(8):e43866. doi:10.7759/cureus.43866
+6. Kalidindi S, Gandhi S. Workforce Crisis in Radiology in the UK and the Strategies to Deal With It: Is Artificial Intelligence the Saviour? *Cureus*. 08 2023;15. doi:[10.7759/cureus.43866](http://dx.doi.org/10.7759/cureus.43866)
 
-7. European Society of Radiology (ESR). Current practical experience with artificial intelligence in clinical radiology: a survey of the European Society of Radiology. Insights Imaging. 2022;13(1):107. doi:10.1186/s13244-022-01247-y
+7. European Society of Radiology. Current practical experience with artificial intelligence in clinical radiology: a survey of the European Society of Radiology. *Insights Imaging*. 06 2022;13. doi:[10.1186/s13244-022-01247-y](http://dx.doi.org/10.1186/s13244-022-01247-y)
 
-8. Zanardo M, Visser JJ, Colarieti A, et al. Impact of AI on radiology: a EuroAIM/EuSoMII 2024 survey among members of the European Society of Radiology. Insights Imaging. 2024;15(1):240. doi:10.1186/s13244-024-01801-w
+8. Zanardo M, Visser JJ, Colarieti A, et al. Impact of AI on radiology: a EuroAIM/EuSoMII 2024 survey among members of the European Society of Radiology. *Insights Imaging*. 10 2024;15:240-240. doi:[10.1186/s13244-024-01801-w](http://dx.doi.org/10.1186/s13244-024-01801-w)
 
-9. Machado L, Vilgrain V, Aubé C, Grégory J. La radiologie entre deux vagues : adoption de l’intelligence artificielle dans les hôpitaux universitaires français en 2025. Journal d’imagerie diagnostique et interventionnelle. 2025;8:348-355. doi:10.1016/j.jidi.2025.07.003
+9. Machado L, Vilgrain V, Aubé C, Grégory J. La radiologie entre deux vagues : Adoption de l’intelligence artificielle dans les hôpitaux universitaires français en 2025. *J D Imag Diagn Interv*. 07 2025;8:348-355. doi:[10.1016/j.jidi.2025.07.003](http://dx.doi.org/10.1016/j.jidi.2025.07.003)
 
-10. Poon EG, Lemak CH, Rojas JC, Guptill J, Classen D. Adoption of artificial intelligence in healthcare: survey of health system priorities, successes, and challenges. J Am Med Inform Assoc. 2025;32(7):1093-1100. doi:10.1093/jamia/ocaf065
+10. Poon EG, Lemak CH, Rojas JC, Guptill J, Classen DC. Adoption of artificial intelligence in healthcare: survey of health system priorities, successes, and challenges. *J Am Med Inform Assoc*. 05 2025;32:1093-1100. doi:[10.1093/jamia/ocaf065](http://dx.doi.org/10.1093/jamia/ocaf065)
 
-11. Codari M, Melazzini L, Morozov SP, van Kuijk CC, Sconfienza LM, Sardanelli F. Impact of artificial intelligence on radiology: a EuroAIM survey among members of the European Society of Radiology. Insights Imaging. 2019;10(1):105. doi:10.1186/s13244-019-0798-3
+11. Codari M, Melazzini L, Morozov SP, van Kuijk CC, Sconfienza LM, Sardanelli F. Impact of artificial intelligence on radiology: a EuroAIM survey among members of the European Society of Radiology. *Insights Imaging*. 10 2019;10:105-105. doi:[10.1186/s13244-019-0798-3](http://dx.doi.org/10.1186/s13244-019-0798-3)
 
 12. Thompson YLE, Fergus J, Chung J, et al. Impact of artificial intelligence triage on radiologist report turnaround time: real-world time savings and insights from model predictions. J Am Coll Radiol. 2026;23(1):63-73. doi:10.1016/j.jacr.2025.07.033
 
-13. Acosta JN, Dogra S, Adithan S, et al. The impact of AI assistance on radiology reporting: a pilot study using simulated AI draft reports. arXiv. Preprint posted online December 16, 2024. Accessed October 20, 2026. https://arxiv.org/abs/2412.12042
+13. Acosta J, Dogra S, Adithan S, et al. The Impact of AI Assistance on Radiology Reporting: A Pilot Study Using Simulated AI Draft Reports. [Preprint] *arXiv (Cornell University)*. Published online 12 2024. doi:[10.48550/arxiv.2412.12042](http://dx.doi.org/10.48550/arxiv.2412.12042)
 
-14. Huang J, Wittbrodt MT, Teague CN, et al. Efficiency and quality of generative AI–assisted radiograph reporting. JAMA Netw Open. 2025;8(6):e2513921. doi:10.1001/jamanetworkopen.2025.13921
+14. Huang J, Wittbrodt MT, Teague CN, et al. Efficiency and Quality of Generative AI–Assisted Radiograph Reporting. *JAMA Netw Open*. 06 2025;8. doi:[10.1001/jamanetworkopen.2025.13921](http://dx.doi.org/10.1001/jamanetworkopen.2025.13921)
 
-15. Jorg T, Halfmann MC, Stoehr F, et al. A novel reporting workflow for automated integration of artificial intelligence results into structured radiology reports. Insights Imaging. 2024;15(1):80. doi:10.1186/s13244-024-01660-5
+15. Jorg T, Halfmann MC, Stoehr F, et al. A novel reporting workflow for automated integration of artificial intelligence results into structured radiology reports. *Insights Imaging*. 03 2024;15:80-80. doi:[10.1186/s13244-024-01660-5](http://dx.doi.org/10.1186/s13244-024-01660-5)
 
-16. Seah JCY, Tang JSN, Tran A. Drafting the future: the dawn of AI report generation in radiology. Radiology. 2025;316(1):e243378. doi:10.1148/radiol.243378
+16. Seah J, Tang JSN, Tran A. Drafting the Future: The Dawn of AI Report Generation in Radiology. *Radiology*. 07 2025;316. doi:[10.1148/radiol.243378](http://dx.doi.org/10.1148/radiol.243378)
 
-17. Shin HJ, Han K, Ryu L, Kim EK. The impact of artificial intelligence on the reading times of radiologists for chest radiographs. NPJ Digit Med. 2023;6(1):82. doi:10.1038/s41746-023-00829-4
+17. Shin HJ, Han K, Ryu L, Kim E. The impact of artificial intelligence on the reading times of radiologists for chest radiographs. *NPJ Digit Med*. 04 2023;6:82-82. doi:[10.1038/s41746-023-00829-4](http://dx.doi.org/10.1038/s41746-023-00829-4)
 
-18. Stogiannos N, Cuocolo R, D’Antonoli TA, et al. Recognising errors in AI implementation in radiology: a narrative review. Eur J Radiol. 2025;191:112311. doi:10.1016/j.ejrad.2025.112311
+18. Stogiannos N, Cuocolo R, D’Antonoli TA, et al. Recognising errors in AI implementation in radiology: A narrative review. *European Journal of Radiology*. 07 2025;191:112311-112311. doi:[10.1016/j.ejrad.2025.112311](http://dx.doi.org/10.1016/j.ejrad.2025.112311)
 
-19. Wenderott K, Krups J, Zaruchas F, Weigl M. Effects of artificial intelligence implementation on efficiency in medical imaging: a systematic literature review and meta-analysis. NPJ Digit Med. 2024;7(1):265. doi:10.1038/s41746-024-01248-9
+19. Wenderott K, Krups J, Zaruchas F, Weigl M. Effects of artificial intelligence implementation on efficiency in medical imaging–a systematic literature review and meta-analysis. *npj Digital Medicine*. 09 2024;7:265-265. doi:[10.1038/s41746-024-01248-9](http://dx.doi.org/10.1038/s41746-024-01248-9)
 
-20. Dean G, Montañà E, Kyriazi S, et al. Real-world monitoring of artificial intelligence in radiology: challenges and best practices. Korean J Radiol. 2025;26(11):1010-1021. doi:10.3348/kjr.2025.0962
+20. Dean G, Montañà E, Kyriazi S, et al. Real-World Monitoring of Artificial Intelligence in Radiology: Challenges and Best Practices. *Korean Journal of Radiology*. 01 2025;26:1010-1010. doi:[10.3348/kjr.2025.0962](http://dx.doi.org/10.3348/kjr.2025.0962)
 
-21. Gu Z, Dogra S, Siriruchatanon M, Kneifati-Hayek J, Kang SK. Radiology workflow assistance with artificial intelligence: establishing the link to outcomes. J Am Coll Radiol. 2026;23(3):389-398. doi:10.1016/j.jacr.2025.10.018
+21. Gu Z, Dogra S, Siriruchatanon M, Kneifati-Hayek J, Kang SK. Radiology workflow assistance with artificial intelligence: Establishing the link to outcomes. *J Am Coll Radiol*. Published online October 15, 2025. doi:[10.1016/j.jacr.2025.10.018](http://dx.doi.org/10.1016/j.jacr.2025.10.018)
 
 22. Blezek DJ, Olson-Williams L, Missert A, Korfiatis P. AI Integration in the Clinical Workflow. *J Digit Imaging*. 10 2021;34:1435-1446. doi:[10.1007/s10278-021-00525-3](http://dx.doi.org/10.1007/s10278-021-00525-3)
 
-23. Linguraru MG, Bakas S, Aboian M, et al. Clinical, cultural, computational, and regulatory considerations to deploy AI in radiology: perspectives of RSNA and MICCAI experts. Radiol Artif Intell. 2024;6(4):e240225. doi:10.1148/ryai.240225
+23. Linguraru MG, Bakas S, Aboian M, et al. Clinical, Cultural, Computational, and Regulatory Considerations to Deploy AI in Radiology: Perspectives of RSNA and MICCAI Experts. *Radiol Artif Intell*. 07 2024;6. doi:[10.1148/ryai.240225](http://dx.doi.org/10.1148/ryai.240225)
 
 24. Reichheld FF. The one number you need to grow. *Harv Bus Rev*. 2003;81(12):46-54, 124. <https://www.ncbi.nlm.nih.gov/pubmed/14712543>
 
@@ -397,21 +397,21 @@ During the preparation of this work the authors used Gemini 3 Pro and Claude Opu
 
 26. Bharadwaj P, Nicola L, Breau-Brunel M, et al. Unlocking the value: Quantifying the return on investment of hospital artificial intelligence. *J Am Coll Radiol*. 2024;21(10):1677-1685. doi:[10.1016/j.jacr.2024.02.034](http://dx.doi.org/10.1016/j.jacr.2024.02.034)
 
-27. Lawrence R, Dodsworth E, Massou E, et al. Artificial intelligence for diagnostics in radiology practice: a rapid systematic scoping review. EClinicalMedicine. 2025;83:103228. doi:10.1016/j.eclinm.2025.103228
+27. Lawrence R, Dodsworth E, Massou E, et al. Artificial intelligence for diagnostics in radiology practice: a rapid systematic scoping review. *EClinicalMedicine*. 2025;83(103228):103228. doi:[10.1016/j.eclinm.2025.103228](http://dx.doi.org/10.1016/j.eclinm.2025.103228)
 
-28. Rizk B, Heracleous N, Dufour B, et al. Impact of AI assistance on knee MRI reading time: a real-world multicenter study. Eur J Radiol Artif Intell. 2026;6:100076. doi:10.1016/j.ejrai.2026.100076
+28. Rizk B, Heracleous N, Dufour B, et al. Impact of AI assistance on knee MRI reading time: A real-world multicenter study. *European Journal of Radiology Artificial Intelligence*. 2026;6(100076):100076. doi:[10.1016/j.ejrai.2026.100076](http://dx.doi.org/10.1016/j.ejrai.2026.100076)
 
 29. Vasiliev YA, Vlazimirsky AV, Omelyanskaya OV, et al. Methodology for testing and monitoring artificial intelligence-based software for medical diagnostics. *Digital Diagnostics*. 2023;4(3):252-267. doi:[10.17816/dd321971](http://dx.doi.org/10.17816/dd321971)
 
-30. Regulation (EU) 2024/1689 of the European Parliament and of the Council of 13 June 2024 laying down harmonised rules on artificial intelligence (Artificial Intelligence Act). Official Journal of the European Union, L series, 12 July 2024. Accessed October 20, 2026. http://data.europa.eu/eli/reg/2024/1689/oj
+30. European Parliament. Regulation (EU) 2024/1689 (Artificial Intelligence Act). Off J Eur Union. Published July 12, 2024.
 
-31. Reid MJ, Mateen B. The Jevons Paradox in global health: efficiency, demand, and the AI dilemma. Lancet Digit Health. 2025;7(10):100928. doi:10.1016/j.landig.2025.100928
+31. Reid MJ, Mateen B. The Jevons Paradox in global health: efficiency, demand, and the AI dilemma. *Lancet Digit Health*. 2025;7(10):100928. doi:[10.1016/j.landig.2025.100928](http://dx.doi.org/10.1016/j.landig.2025.100928)
 
-32. Hwang EJ, Park JE, Song KD, et al. 2023 survey on user experience of artificial intelligence software in radiology by the Korean Society of Radiology. Korean J Radiol. 2024;25(7):613-622. doi:10.3348/kjr.2023.1246
+32. Hwang EJ, Park JE, Song KD, et al. 2023 Survey on User Experience of Artificial Intelligence Software in Radiology by the Korean Society of Radiology. *Korean J Radiol*. 01 2024;25:613-613. doi:[10.3348/kjr.2023.1246](http://dx.doi.org/10.3348/kjr.2023.1246)
 
-33. van Leeuwen KG, de Rooij M, Schalekamp S, van Ginneken B, Rutten MJCM. Clinical use of artificial intelligence products for radiology in the Netherlands between 2020 and 2022. Eur Radiol. 2024;34(1):348-354. doi:10.1007/s00330-023-09991-5
+33. van Leeuwen KG, de Rooij M, Schalekamp S, van Ginneken B, Rutten M. Clinical use of artificial intelligence products for radiology in the Netherlands between 2020 and 2022. *Eur Radiol*. 07 2023;34:348-354. doi:[10.1007/s00330-023-09991-5](http://dx.doi.org/10.1007/s00330-023-09991-5)
 
-34. Morozov S, Vladzymyrskyy A, Ledikhova N, et al. Diagnostic accuracy of artificial intelligence for analysis of 1.3 million medical imaging studies: the Moscow Experiment on computer vision technologies. medRxiv. Preprint posted online August 31, 2023. doi:10.1101/2023.08.31.23294896
+34. Morozov S, Vladzymyrskyy AV, Ledikhova NV, et al. Diagnostic accuracy of Artificial Intelligence for analysis of 1.3 Million medical imaging studies: the Moscow Experiment on computer vision technologies. [Preprint] *bioRxiv (Cold Spring Harbor Laboratory)*. Published online 08 2023. doi:[10.1101/2023.08.31.23294896](http://dx.doi.org/10.1101/2023.08.31.23294896)
 
 ## Supplementary materials
 
