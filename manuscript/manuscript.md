@@ -6,10 +6,10 @@ Accepted manuscript · Author distribution copy
 
 - Sergey Morozov<sup>1</sup>, General Manager
 - Natalie Heracleous<sup>2</sup>, Senior Researcher
-- Diana Korka<sup>2</sup>, Data analyst
-- Cyril Thouly<sup>2</sup>, COO
-- Benoît Dufour<sup>2</sup>, Workflow manager
 - Octave Novarina<sup>2</sup>, AI engineer
+- Diana Korka<sup>2</sup>, Data analyst
+- Benoît Dufour<sup>2</sup>, Workflow manager
+- Cyril Thouly<sup>2</sup>, COO
 - Benoît Rizk<sup>2</sup>, CMIO and radiologist
 
 <sup>1</sup> Medlogic, Brussels, Belgium 
@@ -25,7 +25,7 @@ This is the accepted manuscript (the authors' version after peer review, before 
 
 **How to cite**
 
-Morozov S, Heracleous N, Korka D, Thouly C, Dufour B, Novarina O, Rizk B. AI Latency, Report Turnaround Time, and Adoption in a Multi-Vendor AI Ecosystem: A Multi-Site Observational Study. J Am Coll Radiol. 2026. doi:10.1016/j.jacr.2026.09.026 
+Morozov S, Heracleous N, Novarina O, Korka D, Dufour B, Thouly C, Rizk B. Artificial Intelligence Latency, Report Turnaround Time, and Adoption in a Multivendor Artificial Intelligence Ecosystem: A Multisite Observational Study. J Am Coll Radiol. 2026. doi:10.1016/j.jacr.2026.09.026 
 BibTeX: <https://aimonitoring.drsergeymorozov.com/cite/citation.bib> 
 RIS: <https://aimonitoring.drsergeymorozov.com/cite/citation.ris> 
 Images for talks and posts: <https://aimonitoring.drsergeymorozov.com/#images>
@@ -36,7 +36,7 @@ Images for talks and posts: <https://aimonitoring.drsergeymorozov.com/#images>
 
 **Corrections**
 
-Corrections notified to the publisher for the proofs have been applied to this version: author order, funding entry in STROBE item 22, number of AI tools in the technical cohort and in Table 1B, vendor names in eTable 1. This copy was laid out by the authors for personal distribution. Its layout does not reproduce the journal version; please cite the published article.
+Corrections submitted by the authors at the proof stage (October 2026) have been applied to this version: wording and citations (references 11, 12, 20 and 29), reference details, typographical corrections in tables, and the supplementary material (eTables 1, 2 and 7, STROBE checklist; eText 1 removed). Authors are listed in the order of the published article. This copy was laid out by the authors for personal distribution. Its layout does not reproduce the journal version; please cite the published article.
 
 **Links**
 
@@ -69,7 +69,7 @@ Radiologists: Roger Aebi, Marcelo Aguilar, Mourad Amor, Marcela Anchanté, Anne-
 
 **Objective:** To evaluate infrastructure latency, workflow, and radiologist sentiment across a 4.5-year, multi-vendor AI implementation program in a 20-center outpatient radiology network.
 
-**Methods:** Three retrospective cohorts: a technical cohort (96,874 examinations; Sep 2023–Sep 2025) for PACS-to-PACS latency and temporal alignment of 9 of 10 deployed AI tools from 7 vendors; a report turnaround time (TAT) analysis cohort (20,909 examinations; Mar–Aug 2025) comparing TAT between AI-available and concurrent non-AI workflows by Mann-Whitney U; and a survey cohort (58 radiologists; two waves 2025) for adoption, Likert-scale perceptions, and Net Promoter Score (NPS).
+**Methods:** Three retrospective cohorts: a technical cohort (96,874 examinations; Sep 2023–Sep 2025) for PACS-to-PACS latency of 9 AI tools and temporal alignment of 10 AI tools; a report turnaround time (TAT) analysis cohort (20,909 examinations; Mar–Aug 2025) comparing TAT between AI-available and concurrent non-AI workflows by Mann-Whitney U; and a survey cohort (58 radiologists; two waves 2025) for adoption, Likert-scale perceptions, and Net Promoter Score (NPS).
 
 **Results:** Active AI adoption was 91.4% (53/58), with 66% (35/53) reporting regular use. Median total latency was 2.06 minutes [interquartile range 1.74-3.05], 72% of which attributable to data routing. The "Too Late" rate (AI result arriving after report finalization) was 7.2% overall, ranging from 3.0% for knee MRI to 13.2% for chest CT. After adjustment for radiologist (linear mixed-effects models), AI availability was associated with lower median TAT for trauma radiography (-26%) and knee MRI (-18%; both p<0.001); brain volumetry MRI showed no significant change (+9.2%; p=0.33). In exploratory analysis, NPS declined for chest CT (+38 to −3) and aorta CT (+22 to −25), nominally significant before multiple-comparison correction.
 
@@ -88,17 +88,17 @@ Radiologists: Roger Aebi, Marcelo Aguilar, Mourad Amor, Marcela Anchanté, Anne-
 
 ## Introduction
 
-Facing radiologist shortages and rising imaging demand (8% growth in CT/MRI vs. 4.7% workforce increase, projecting a 39% shortfall by 2029),<sup>1,2 </sup>many radiology groups have increasingly adopted computational pattern-recognition tools.<sup>3–6</sup> AI use is accelerating but uneven: a 2024 survey reported 47.9% active users (up from 20% in 2018), and 2025 French academic settings saw 80% adoption.<sup>7–9</sup> In contrast, US systems cite immature tools and financial barriers.<sup>10</sup> While radiologists value AI as a "safety net" for subtle findings, most users report no significant workload reduction.<sup>11</sup>
+Facing radiologist shortages and rising imaging demand (8% growth in CT/MRI vs. 4.7% workforce increase, projecting a 39% shortfall by 2029),<sup>1,2 </sup>many radiology groups have increasingly adopted computational pattern-recognition tools.<sup>3–6</sup> AI use is accelerating but uneven: a 2024 survey reported 47.9% active users (up from 20% in 2018), and 2025 French academic settings saw 80% adoption.<sup>7–9</sup> In contrast, US systems cite immature tools and financial barriers.<sup>10</sup> Although radiologists were generally favourable towards AI, they were evenly divided on whether it would reduce or increase their reporting workload.<sup>11</sup>
 
-AI's potential to enhance efficiency has been demonstrated in narrow contexts. For instance, AI-driven worklist triage reduces report turnaround time (TAT) for acute findings like pulmonary embolism by 20% to 32% during peak hours.<sup>12</sup> Emerging research on Generative AI and Large Language Models (LLM) for draft reporting suggests 15.5% to 24% gains in documentation efficiency without compromising accuracy.<sup>13–16</sup> However, these benefits are highly variable; some studies show that AI paradoxically increases reading times for complex cases or causes "alert fatigue" from false flags on normal exams.<sup>17–19</sup>
+AI's potential to enhance efficiency has been demonstrated in narrow contexts. For instance, AI-driven worklist triage reduces report turnaround time (TAT) for acute findings like pulmonary embolism by about 32% during peak hours.<sup>12</sup> Emerging research on Generative AI and Large Language Models (LLM) for draft reporting suggests 15.5% to 24% gains in documentation efficiency without compromising accuracy.<sup>13–16</sup> However, these benefits are highly variable; some studies show that AI paradoxically increases reading times for complex cases or causes "alert fatigue" from false flags.<sup>17–19</sup>
 
-The real-world impact of technical infrastructure on clinical utility is poorly documented.<sup>18,19</sup> While multinational studies have explored monitoring and algorithm helpfulness,<sup>20</sup> large-scale evidence on multi-vendor orchestration and infrastructure latency remains scarce and a recent comprehensive review confirmed that most AI workflow studies remain single-site with short observation windows and intermediate process measures.<sup>21</sup> The major gap is the "Last Mile" problem: how processing delays erode AI value in acute settings, irrespective of algorithmic accuracy.<sup>22,23</sup>
+The real-world impact of technical infrastructure on clinical utility is poorly documented.<sup>18,19</sup> While multinational studies have explored monitoring and algorithm helpfulness,<sup>20</sup> large-scale evidence on multi-vendor orchestration and infrastructure latency remains scarce and a recent review noted that most AI workflow studies remain single-site with short observation windows and intermediate process measures.<sup>21</sup> The major gap is the "Last Mile" problem: how processing delays erode AI value in acute settings, irrespective of algorithmic accuracy.<sup>22,23</sup>
 
 This study quantifies PACS-to-PACS latency and the temporal alignment of AI results with report finalization across ~389,000 AI-assisted examinations, with detailed latency analysis on a quality-controlled subset of ~97,000 cases; compares report turnaround time between AI-available and concurrent non-AI workflows; and evaluates adoption and perceived value in a two-wave survey of the Network's 58 radiologists.
 
 ## Methods
 
-**Study Design and Ethical Approval** This retrospective observational study was conducted across a 20-center outpatient radiology network in the French-speaking area, operating under single private ownership. The 20 centers were grouped into 13 clusters. Sites were assigned to the same cluster when they are located in close geographic proximity and are staffed by the same radiologists, who rotate between them and work from a partly shared worklist. Clustering reflects staffing and workflow adjacency, not examination volume. The Network deploys approximately 50 imaging systems (25 CT and 25 MRI) and employs 58 board-certified radiologists, who interpret examinations across multiple sites within their assigned clusters. Reporting follows the STROBE statement for observational studies; the completed checklist is provided as Supplementary Material.
+**Study Design and Ethical Approval** This retrospective observational study was conducted across a 20-center outpatient radiology network in the French-speaking area, operating under single private ownership. The 20 centers were grouped into 13 clusters. Sites were assigned to the same cluster when they were located in close geographic proximity and were staffed by the same radiologists, who rotate between them and work from a partly shared worklist. Clustering reflects staffing and workflow adjacency, not examination volume. The Network deploys approximately 50 imaging systems (25 CT and 25 MRI) and employs 58 board-certified radiologists, who interpret examinations across multiple sites within their assigned clusters. Reporting follows the STROBE statement for observational studies; the completed checklist is provided as Supplementary Material.
 
 The Network processed approximately 389,000 AI-assisted examinations over the 4.5-year deployment; detailed participant flow, completion rates, and exclusions are reported in Results and Figure 1. Earlier implementation phases lacked standardized DICOM/HL7 logging; the Technical Cohort therefore covers only the mature infrastructure period (2023–2025), where all pipeline steps were consistently recorded.
 
@@ -207,7 +207,7 @@ Missing data rates for key variables: latency timestamps available for 96,874/~3
 
 **Technical Performance and Latency Analysis (Longitudinal Data)** Median Total Latency was 2.06 minutes [IQR:1.74-3.05] (eFigure 1), with 72% attributable to data routing (eFigure 2). Fetching the study from PACS was the single largest latency component in five of nine solutions (22% to 61% of total time). AI inference time varied substantially by modality (from 0.21 min for XR to 6.61 min for brain MRI); the volume-weighted global median was 0.22 [IQR: 0.21-0.37] minutes (Table 2).
 
-A pre-specified within-cohort stability check (eTable 3) showed steady-state processing latency for five of nine AI solutions. Four exhibited distinct patterns, progressive latency drift, post-deployment convergence, and a temporal infrastructure incident with full recovery, identifying targets for continuous monitoring rather than algorithm-level confounding.
+A pre-specified within-cohort stability check (eTable 3) showed steady-state processing latency for five of nine AI solutions. Four exhibited distinct patterns: progressive latency drift, post-deployment convergence, and a temporary infrastructure incident with full recovery, identifying targets for continuous monitoring rather than algorithm-level confounding.
 
 The global "Too Late" rate was 7.2%, varying markedly by modality: 13.2% for chest CT, 6.8% for trauma X-ray, and 3.0% for knee MRI (Figure 2). Cross-sectional imaging (CT/MRI, n=5,246) arrived during or after report finalization more often than radiography (29.6% [1,554/5,246] vs. 13.6% [2,079/15,260], p<0.001).
 
@@ -303,27 +303,27 @@ Table 5. NPS Score Comparison and Statistical Significance of change from May-Ju
 
 ### Report TAT and Workforce Capacity
 
-The estimated 0.69 FTE annual capacity associated with BoneView (45,561 exams × 2 min saved / 60 / 2,200 gross hours) at 23–25% of one radiologist FTE salary yields an approximate 3:1 ROI; a mixed-effects sensitivity analysis accounting for radiologist clustering yielded an attenuated 0.46 FTE / ~2:1 ROI, confirming a positive return after methodological correction. Per-site this equates to ≈0.03–0.05 FTE, but the AI subscription is network-level – so network-level ROI is the appropriate economic unit. This estimate assumes the 2-minute TAT difference is fully attributable to AI availability and does not adjust for case complexity or self-selection. This aligns with Bharadwaj et al.'s modeled 451% five-year ROI for a stroke-focused AI platform.<sup>26</sup>
+The estimated 0.69 FTE annual capacity associated with BoneView (45,561 exams × 2 min saved / 60 / 2,200 gross hours) at 23–25% of one radiologist FTE salary yields an approximate 3:1 ROI; a mixed-effects sensitivity analysis accounting for radiologist clustering yielded an attenuated 0.46 FTE / ~2:1 ROI, confirming a positive return after methodological correction. Per-site this equates to ≈0.03–0.05 FTE, but the AI subscription is network-level – so network-level ROI is the appropriate economic unit. This estimate assumes the 2-minute TAT difference is fully attributable to AI availability and does not adjust for case complexity or self-selection. For comparison, Bharadwaj et al. modeled a 451% five-year ROI for an AI platform in a hospital accredited for stroke management, driven mainly by downstream hospitalizations and procedures.<sup>26</sup>
 
 This success is stratified by modality and contingent upon robust infrastructure, consistent with a 140-study systematic review reporting mixed efficiency evidence.<sup>27</sup> That 72% of total latency stems from data routing rather than algorithm inference shows that the barrier to clinical utility is delivery and workflow fit, not the algorithm itself.
 
 A detailed knee MRI reading-time analysis in the same network showed AI disproportionately benefited generalist radiologists (−34%) over subspecialists (−18%), suggesting AI may partially compensate for subspecialty expertise gaps in mixed-practice settings.<sup>28</sup> Observed TAT differences should be interpreted as associations, not causal effects, given the non-randomized comparison (see Limitations).
 
-**Comparison with International Practices** The Network's implementation maturity exceeded reported benchmarks (eTable 7). In a 2025 French academic survey,<sup>9</sup> 80% of radiologists had AI available but 70% perceived no workload reduction; case mix plausibly explains part of the gap; within a given case mix, however, result-delivery latency remains the binding constraint, consistent with Dean et al.'s monitoring framework<sup>20</sup>.
+**Comparison with International Practices** The Network's implementation maturity exceeded reported benchmarks (eTable 7). In a 2025 French academic survey,<sup>9</sup> 80% of radiologists used AI but 70% perceived no workload reduction; case mix plausibly explains part of the gap; within a given case mix, however, result-delivery latency remains the binding constraint, consistent with Dean et al.'s monitoring framework<sup>20</sup>.
 
 ### Implications for Implementation: a PDCA-Based Governance Framework
 
-The lessons learned from this 4.5-year implementation experience suggest a PDCA-based governance framework: (Plan) Define Time-to-Display targets before implementation; (Do) Implement automated push architectures; (Check) Monitor latency, algorithm drift, and NPS quarterly; (Act) Decommission underperforming tools and upgrade routing. This framework aligns with emerging monitoring methodologies such as the Moscow Experiment's continuous testing protocol for 52 AI models.<sup>29</sup> Besides, all AI applications in this study fall under the EU AI Act (Regulation 2024/1689) high-risk classification,<sup>30</sup> which mandates post-market monitoring aligned with these principles.
+The lessons learned from this 4.5-year implementation experience suggest a PDCA-based governance framework: (Plan) Define Time-to-Display targets before implementation; (Do) Implement automated push architectures; (Check) Monitor latency, algorithm drift, and NPS quarterly; (Act) Decommission underperforming tools and upgrade routing. This framework aligns with emerging monitoring methodologies such as the continuous testing and monitoring methodology of the Moscow Experiment.<sup>29</sup> Besides, all AI applications in this study fall under the EU AI Act (Regulation 2024/1689) high-risk classification,<sup>30</sup> which mandates post-market monitoring aligned with these principles.
 
 ### Technical Latency and the "Too Late" Metric
 
-The 'Too Late' rate (7.2% globally, 13.2% for chest CT) quantifies infrastructure opportunity loss – AI results technically unavailable at report finalization – rather than confirmed clinical inefficiency. Because results are delivered automatically, even timely results are displayed passively; active engagement varies by radiologist confidence and workload pressure.<sup>31</sup> The 13.2% thus represents a ceiling on potential inefficiency, not its actual magnitude. Although engagement analytics were not collected, radiologists routinely reference AI findings in reports and attach AI-generated key images.
+The 'Too Late' rate (7.2% globally, 13.2% for chest CT) quantifies infrastructure opportunity loss – AI results technically unavailable at report finalization – rather than confirmed clinical inefficiency. Because results are delivered automatically, even timely results are displayed passively; active engagement varies by radiologist confidence and workload pressure.<sup>20</sup> The 13.2% thus represents a ceiling on potential inefficiency, not its actual magnitude. Although engagement analytics were not collected, radiologists routinely reference AI findings in reports and attach AI-generated key images.
 
 ### Radiologist Sentiment and the Specificity Pattern
 
-The co-occurrence of minimal TAT improvement (13.5%) and declining NPS (38→−3) for Chest CT, against the backdrop of substantial TAT gains and stable NPS for Trauma XR, generates a hypothesis that in high-volume workflows false-positive burden may erode perceived efficiency gains even when diagnostic sensitivity is preserved. The Chest CT NPS decline may reflect false-positive burden, latency (13.1 min total, 13.2% Too Late), software version changes, or small per-tool samples (n=39); our data cannot disentangle these contributions, and the hypothesis requires prospective testing.
+The co-occurrence of a smaller TAT improvement (13.5%) and declining NPS (38→−3) for Chest CT, against the backdrop of substantial TAT gains and stable NPS for Trauma XR, generates a hypothesis that in high-volume workflows false-positive burden may erode perceived efficiency gains even when diagnostic sensitivity is preserved. The Chest CT NPS decline may reflect false-positive burden, latency (13.1 min total, 13.2% Too Late), software version changes, or small per-tool samples (n=39); our data cannot disentangle these contributions, and the hypothesis requires prospective testing.
 
-The disconnect between objective TAT reductions and subjective productivity perception (Table 4: Likert productivity 2.57–2.94, below the neutral midpoint, despite 26% and 18% measured TAT reductions) suggests an efficiency absorption pattern: time savings from AI-accelerated reporting may be immediately reinvested into additional case volume rather than experienced as workload relief.32 This disconnect may be modulated by experience (ρ=−0.32, p=0.018): early-career radiologists derive greater incremental benefit than seniors with established routines.
+The disconnect between objective TAT reductions and subjective productivity perception (Table 4: Likert productivity 2.57–2.94, below the neutral midpoint, despite 26% and 18% measured TAT reductions) suggests an efficiency absorption pattern: time savings from AI-accelerated reporting may be immediately reinvested into additional case volume rather than experienced as workload relief.<sup>31</sup> This disconnect may be modulated by experience (ρ=−0.32, p=0.018): early-career radiologists derive greater incremental benefit than seniors with established routines.
 
 A 4.5-year, 20-center implementation achieved 91% adoption and 26% trauma radiography TAT reduction through workflow-integrated deployment; infrastructure latency – not algorithm speed – is the primary barrier to AI clinical utility.
 
@@ -349,47 +349,47 @@ During the preparation of this work the authors used Gemini 3 Pro and Claude Opu
 
 2. Halliday K. 2024 workforce census reports lay bare the challenges facing radiology and clinical oncology. Royal College of Radiologists. Published January 2024. Accessed March 2, 2026. <https://www.rcr.ac.uk/news-policy/latest-updates/2024-workforce-census-reports-lay-bare-the-challenges-facing-radiology-and-clinical-oncology/>
 
-3. Hua D, Petrina N, Young N, Cho J, Poon S. Understanding the factors influencing acceptability of AI in medical imaging domains among healthcare professionals: A scoping review. *Artificial Intelligence in Medicine*. 11 2023;147:102698-102698. doi:[10.1016/j.artmed.2023.102698](http://dx.doi.org/10.1016/j.artmed.2023.102698)
+3. Hua D, Petrina N, Young N, Cho J, Poon S. Understanding the factors influencing acceptability of AI in medical imaging domains among healthcare professionals: a scoping review. Artif Intell Med. 2023;147:102698. doi:10.1016/j.artmed.2023.102698
 
-4. Rawson JV, Smetherman D, Rubin E. Short-Term Strategies for Augmenting the National Radiologist Workforce. *American Journal of Roentgenology*. 04 2024;222. doi:[10.2214/ajr.24.30920](http://dx.doi.org/10.2214/ajr.24.30920)
+4. Rawson JV, Smetherman D, Rubin E. Short-term strategies for augmenting the national radiologist workforce. AJR Am J Roentgenol. 2024;222(6):e2430920. doi:10.2214/AJR.24.30920
 
 5. Brink JA, Hricak H. Radiology 2040. *Radiology*. 12 2022;306:69-72. doi:[10.1148/radiol.222594](http://dx.doi.org/10.1148/radiol.222594)
 
-6. Kalidindi S, Gandhi S. Workforce Crisis in Radiology in the UK and the Strategies to Deal With It: Is Artificial Intelligence the Saviour? *Cureus*. 08 2023;15. doi:[10.7759/cureus.43866](http://dx.doi.org/10.7759/cureus.43866)
+6. Kalidindi S, Gandhi S. Workforce crisis in radiology in the UK and the strategies to deal with it: is artificial intelligence the saviour? Cureus. 2023;15(8):e43866. doi:10.7759/cureus.43866
 
-7. European Society of Radiology. Current practical experience with artificial intelligence in clinical radiology: a survey of the European Society of Radiology. *Insights Imaging*. 06 2022;13. doi:[10.1186/s13244-022-01247-y](http://dx.doi.org/10.1186/s13244-022-01247-y)
+7. European Society of Radiology (ESR). Current practical experience with artificial intelligence in clinical radiology: a survey of the European Society of Radiology. Insights Imaging. 2022;13(1):107. doi:10.1186/s13244-022-01247-y
 
-8. Zanardo M, Visser JJ, Colarieti A, et al. Impact of AI on radiology: a EuroAIM/EuSoMII 2024 survey among members of the European Society of Radiology. *Insights Imaging*. 10 2024;15:240-240. doi:[10.1186/s13244-024-01801-w](http://dx.doi.org/10.1186/s13244-024-01801-w)
+8. Zanardo M, Visser JJ, Colarieti A, et al. Impact of AI on radiology: a EuroAIM/EuSoMII 2024 survey among members of the European Society of Radiology. Insights Imaging. 2024;15(1):240. doi:10.1186/s13244-024-01801-w
 
-9. Machado L, Vilgrain V, Aubé C, Grégory J. La radiologie entre deux vagues : Adoption de l’intelligence artificielle dans les hôpitaux universitaires français en 2025. *J D Imag Diagn Interv*. 07 2025;8:348-355. doi:[10.1016/j.jidi.2025.07.003](http://dx.doi.org/10.1016/j.jidi.2025.07.003)
+9. Machado L, Vilgrain V, Aubé C, Grégory J. La radiologie entre deux vagues : adoption de l’intelligence artificielle dans les hôpitaux universitaires français en 2025. Journal d’imagerie diagnostique et interventionnelle. 2025;8:348-355. doi:10.1016/j.jidi.2025.07.003
 
-10. Poon EG, Lemak CH, Rojas JC, Guptill J, Classen DC. Adoption of artificial intelligence in healthcare: survey of health system priorities, successes, and challenges. *J Am Med Inform Assoc*. 05 2025;32:1093-1100. doi:[10.1093/jamia/ocaf065](http://dx.doi.org/10.1093/jamia/ocaf065)
+10. Poon EG, Lemak CH, Rojas JC, Guptill J, Classen D. Adoption of artificial intelligence in healthcare: survey of health system priorities, successes, and challenges. J Am Med Inform Assoc. 2025;32(7):1093-1100. doi:10.1093/jamia/ocaf065
 
-11. Codari M, Melazzini L, Morozov SP, van Kuijk CC, Sconfienza LM, Sardanelli F. Impact of artificial intelligence on radiology: a EuroAIM survey among members of the European Society of Radiology. *Insights Imaging*. 10 2019;10:105-105. doi:[10.1186/s13244-019-0798-3](http://dx.doi.org/10.1186/s13244-019-0798-3)
+11. Codari M, Melazzini L, Morozov SP, van Kuijk CC, Sconfienza LM, Sardanelli F. Impact of artificial intelligence on radiology: a EuroAIM survey among members of the European Society of Radiology. Insights Imaging. 2019;10(1):105. doi:10.1186/s13244-019-0798-3
 
-12. Cellina M, Cè M, Irmici G, et al. Artificial Intelligence in Emergency Radiology: Where Are We Going? *Diagnostics*. 12 2022;12:3223-3223. doi:[10.3390/diagnostics12123223](http://dx.doi.org/10.3390/diagnostics12123223)
+12. Thompson YLE, Fergus J, Chung J, et al. Impact of artificial intelligence triage on radiologist report turnaround time: real-world time savings and insights from model predictions. J Am Coll Radiol. 2026;23(1):63-73. doi:10.1016/j.jacr.2025.07.033
 
-13. Acosta J, Dogra S, Adithan S, et al. The Impact of AI Assistance on Radiology Reporting: A Pilot Study Using Simulated AI Draft Reports. [Preprint] *arXiv (Cornell University)*. Published online 12 2024. doi:[10.48550/arxiv.2412.12042](http://dx.doi.org/10.48550/arxiv.2412.12042)
+13. Acosta JN, Dogra S, Adithan S, et al. The impact of AI assistance on radiology reporting: a pilot study using simulated AI draft reports. arXiv. Preprint posted online December 16, 2024. Accessed October 20, 2026. https://arxiv.org/abs/2412.12042
 
-14. Huang J, Wittbrodt MT, Teague CN, et al. Efficiency and Quality of Generative AI–Assisted Radiograph Reporting. *JAMA Netw Open*. 06 2025;8. doi:[10.1001/jamanetworkopen.2025.13921](http://dx.doi.org/10.1001/jamanetworkopen.2025.13921)
+14. Huang J, Wittbrodt MT, Teague CN, et al. Efficiency and quality of generative AI–assisted radiograph reporting. JAMA Netw Open. 2025;8(6):e2513921. doi:10.1001/jamanetworkopen.2025.13921
 
-15. Jorg T, Halfmann MC, Stoehr F, et al. A novel reporting workflow for automated integration of artificial intelligence results into structured radiology reports. *Insights Imaging*. 03 2024;15:80-80. doi:[10.1186/s13244-024-01660-5](http://dx.doi.org/10.1186/s13244-024-01660-5)
+15. Jorg T, Halfmann MC, Stoehr F, et al. A novel reporting workflow for automated integration of artificial intelligence results into structured radiology reports. Insights Imaging. 2024;15(1):80. doi:10.1186/s13244-024-01660-5
 
-16. Seah J, Tang JSN, Tran A. Drafting the Future: The Dawn of AI Report Generation in Radiology. *Radiology*. 07 2025;316. doi:[10.1148/radiol.243378](http://dx.doi.org/10.1148/radiol.243378)
+16. Seah JCY, Tang JSN, Tran A. Drafting the future: the dawn of AI report generation in radiology. Radiology. 2025;316(1):e243378. doi:10.1148/radiol.243378
 
-17. Shin HJ, Han K, Ryu L, Kim E. The impact of artificial intelligence on the reading times of radiologists for chest radiographs. *NPJ Digit Med*. 04 2023;6:82-82. doi:[10.1038/s41746-023-00829-4](http://dx.doi.org/10.1038/s41746-023-00829-4)
+17. Shin HJ, Han K, Ryu L, Kim EK. The impact of artificial intelligence on the reading times of radiologists for chest radiographs. NPJ Digit Med. 2023;6(1):82. doi:10.1038/s41746-023-00829-4
 
-18. Stogiannos N, Cuocolo R, D’Antonoli TA, et al. Recognising errors in AI implementation in radiology: A narrative review. *European Journal of Radiology*. 07 2025;191:112311-112311. doi:[10.1016/j.ejrad.2025.112311](http://dx.doi.org/10.1016/j.ejrad.2025.112311)
+18. Stogiannos N, Cuocolo R, D’Antonoli TA, et al. Recognising errors in AI implementation in radiology: a narrative review. Eur J Radiol. 2025;191:112311. doi:10.1016/j.ejrad.2025.112311
 
-19. Wenderott K, Krups J, Zaruchas F, Weigl M. Effects of artificial intelligence implementation on efficiency in medical imaging–a systematic literature review and meta-analysis. *npj Digital Medicine*. 09 2024;7:265-265. doi:[10.1038/s41746-024-01248-9](http://dx.doi.org/10.1038/s41746-024-01248-9)
+19. Wenderott K, Krups J, Zaruchas F, Weigl M. Effects of artificial intelligence implementation on efficiency in medical imaging: a systematic literature review and meta-analysis. NPJ Digit Med. 2024;7(1):265. doi:10.1038/s41746-024-01248-9
 
-20. Dean G, Montañà E, Kyriazi S, et al. Real-World Monitoring of Artificial Intelligence in Radiology: Challenges and Best Practices. *Korean Journal of Radiology*. 01 2025;26:1010-1010. doi:[10.3348/kjr.2025.0962](http://dx.doi.org/10.3348/kjr.2025.0962)
+20. Dean G, Montañà E, Kyriazi S, et al. Real-world monitoring of artificial intelligence in radiology: challenges and best practices. Korean J Radiol. 2025;26(11):1010-1021. doi:10.3348/kjr.2025.0962
 
-21. Gu Z, Dogra S, Siriruchatanon M, Kneifati-Hayek J, Kang SK. Radiology workflow assistance with artificial intelligence: Establishing the link to outcomes. *J Am Coll Radiol*. Published online October 15, 2025. doi:[10.1016/j.jacr.2025.10.018](http://dx.doi.org/10.1016/j.jacr.2025.10.018)
+21. Gu Z, Dogra S, Siriruchatanon M, Kneifati-Hayek J, Kang SK. Radiology workflow assistance with artificial intelligence: establishing the link to outcomes. J Am Coll Radiol. 2026;23(3):389-398. doi:10.1016/j.jacr.2025.10.018
 
 22. Blezek DJ, Olson-Williams L, Missert A, Korfiatis P. AI Integration in the Clinical Workflow. *J Digit Imaging*. 10 2021;34:1435-1446. doi:[10.1007/s10278-021-00525-3](http://dx.doi.org/10.1007/s10278-021-00525-3)
 
-23. Linguraru MG, Bakas S, Aboian M, et al. Clinical, Cultural, Computational, and Regulatory Considerations to Deploy AI in Radiology: Perspectives of RSNA and MICCAI Experts. *Radiol Artif Intell*. 07 2024;6. doi:[10.1148/ryai.240225](http://dx.doi.org/10.1148/ryai.240225)
+23. Linguraru MG, Bakas S, Aboian M, et al. Clinical, cultural, computational, and regulatory considerations to deploy AI in radiology: perspectives of RSNA and MICCAI experts. Radiol Artif Intell. 2024;6(4):e240225. doi:10.1148/ryai.240225
 
 24. Reichheld FF. The one number you need to grow. *Harv Bus Rev*. 2003;81(12):46-54, 124. <https://www.ncbi.nlm.nih.gov/pubmed/14712543>
 
@@ -397,23 +397,21 @@ During the preparation of this work the authors used Gemini 3 Pro and Claude Opu
 
 26. Bharadwaj P, Nicola L, Breau-Brunel M, et al. Unlocking the value: Quantifying the return on investment of hospital artificial intelligence. *J Am Coll Radiol*. 2024;21(10):1677-1685. doi:[10.1016/j.jacr.2024.02.034](http://dx.doi.org/10.1016/j.jacr.2024.02.034)
 
-27. Lawrence R, Dodsworth E, Massou E, et al. Artificial intelligence for diagnostics in radiology practice: a rapid systematic scoping review. *EClinicalMedicine*. 2025;83(103228):103228. doi:[10.1016/j.eclinm.2025.103228](http://dx.doi.org/10.1016/j.eclinm.2025.103228)
+27. Lawrence R, Dodsworth E, Massou E, et al. Artificial intelligence for diagnostics in radiology practice: a rapid systematic scoping review. EClinicalMedicine. 2025;83:103228. doi:10.1016/j.eclinm.2025.103228
 
-28. Rizk B, Heracleous N, Dufour B, et al. Impact of AI assistance on knee MRI reading time: A real-world multicenter study. *European Journal of Radiology Artificial Intelligence*. 2026;6(100076):100076. doi:[10.1016/j.ejrai.2026.100076](http://dx.doi.org/10.1016/j.ejrai.2026.100076)
+28. Rizk B, Heracleous N, Dufour B, et al. Impact of AI assistance on knee MRI reading time: a real-world multicenter study. Eur J Radiol Artif Intell. 2026;6:100076. doi:10.1016/j.ejrai.2026.100076
 
 29. Vasiliev YA, Vlazimirsky AV, Omelyanskaya OV, et al. Methodology for testing and monitoring artificial intelligence-based software for medical diagnostics. *Digital Diagnostics*. 2023;4(3):252-267. doi:[10.17816/dd321971](http://dx.doi.org/10.17816/dd321971)
 
-30. European Parliament. Regulation (EU) 2024/1689 (Artificial Intelligence Act). Off J Eur Union. Published July 12, 2024.
+30. Regulation (EU) 2024/1689 of the European Parliament and of the Council of 13 June 2024 laying down harmonised rules on artificial intelligence (Artificial Intelligence Act). Official Journal of the European Union, L series, 12 July 2024. Accessed October 20, 2026. http://data.europa.eu/eli/reg/2024/1689/oj
 
-31. Braithwaite J, Glasziou P, Westbrook J. The three numbers you need to know about healthcare: the 60-30-10 Challenge. *BMC Med*. 2020;18(1):102. doi:[10.1186/s12916-020-01563-4](http://dx.doi.org/10.1186/s12916-020-01563-4)
+31. Reid MJ, Mateen B. The Jevons Paradox in global health: efficiency, demand, and the AI dilemma. Lancet Digit Health. 2025;7(10):100928. doi:10.1016/j.landig.2025.100928
 
-32. Reid MJ, Mateen B. The Jevons Paradox in global health: efficiency, demand, and the AI dilemma. *Lancet Digit Health*. 2025;7(10):100928. doi:[10.1016/j.landig.2025.100928](http://dx.doi.org/10.1016/j.landig.2025.100928)
+32. Hwang EJ, Park JE, Song KD, et al. 2023 survey on user experience of artificial intelligence software in radiology by the Korean Society of Radiology. Korean J Radiol. 2024;25(7):613-622. doi:10.3348/kjr.2023.1246
 
-33. Hwang EJ, Park JE, Song KD, et al. 2023 Survey on User Experience of Artificial Intelligence Software in Radiology by the Korean Society of Radiology. *Korean J Radiol*. 01 2024;25:613-613. doi:[10.3348/kjr.2023.1246](http://dx.doi.org/10.3348/kjr.2023.1246)
+33. van Leeuwen KG, de Rooij M, Schalekamp S, van Ginneken B, Rutten MJCM. Clinical use of artificial intelligence products for radiology in the Netherlands between 2020 and 2022. Eur Radiol. 2024;34(1):348-354. doi:10.1007/s00330-023-09991-5
 
-34. van Leeuwen KG, de Rooij M, Schalekamp S, van Ginneken B, Rutten M. Clinical use of artificial intelligence products for radiology in the Netherlands between 2020 and 2022. *Eur Radiol*. 07 2023;34:348-354. doi:[10.1007/s00330-023-09991-5](http://dx.doi.org/10.1007/s00330-023-09991-5)
-
-35. Morozov S, Vladzymyrskyy AV, Ledikhova NV, et al. Diagnostic accuracy of Artificial Intelligence for analysis of 1.3 Million medical imaging studies: the Moscow Experiment on computer vision technologies. [Preprint] *bioRxiv (Cold Spring Harbor Laboratory)*. Published online 08 2023. doi:[10.1101/2023.08.31.23294896](http://dx.doi.org/10.1101/2023.08.31.23294896)
+34. Morozov S, Vladzymyrskyy A, Ledikhova N, et al. Diagnostic accuracy of artificial intelligence for analysis of 1.3 million medical imaging studies: the Moscow Experiment on computer vision technologies. medRxiv. Preprint posted online August 31, 2023. doi:10.1101/2023.08.31.23294896
 
 ## Supplementary materials
 
@@ -553,40 +551,15 @@ eTable 7. Comparative Analysis of AI Adoption in Radiology Across International 
 
 | **Study / Site** | **Geography** | **Adoption Rate** | **Primary Use Cases** | **Key Barriers** |
 | --- | --- | --- | --- | --- |
-| **The Network** | Europe | 91.4% among radiologists | MSK (Bone Age, MSK Metrics), Trauma X-ray, Mammography, Neuro MRI | Infrastructure latency/speed (48%), workflow integration, result arrival timing |
+| **The Network** | Europe | 91.4% among radiologists | MSK (Bone Age, MSK Metrics), Trauma X-ray, Mammography, Neuro MRI | Infrastructure latency/speed, workflow integration, result arrival timing |
 | **French University Hospitals (CHU)**<sup>9</sup> | France | 80% adoption in academic settings | Image reconstruction, pathology detection (fractures, chest CT nodules), oncology | High cost (61%), integration complexity (53%), limited workload reduction |
 | **US Health Systems (Scottsdale Institute)**<sup>10</sup> | United States | 90% in Imaging; 100% in Ambient documentation | Ambient Notes(documentation), imaging triage, clinical risk stratification | Immature AI tools (77%), financial concerns (47%), regulatory uncertainty |
 | **ESR / EuroAIM / EuSoMII Survey (2024)**<sup>8</sup> | Europe (93.5%) & Global | 47.9% active users | Breast and oncologic imaging, screening detection, CT/MRI | Costs/lack of budget (49.5%), legal issues (43.7%), lack of validation |
-| **Korean Society of Radiology (KSR)**<sup>33</sup> | South Korea | 60.3% | Lesion detection (82.1%), diagnosis/classification(55.2%) | Institutional purchase failure (75.5%), high cost (18.4%), legal liability |
-| **Netherlands National Survey**<sup>34</sup> | Netherlands | ~33% of radiology departments (by 2022) | Chest CT, musculoskeletal radiographs | Cost, IT integration, lack of dedicated budgets |
-| **Moscow Experiment**<sup>35</sup> | Russia (Moscow) | 100% of state hospitals connected; actual usage rate not reported | Chest CT (COVID-19), Chest X-ray (multiple findings), Mammography | Prospective performance drops, non-representative datasets, segmentation quality |
+| **Korean Society of Radiology (KSR)**<sup>32</sup> | South Korea | 60.3% | Lesion detection (82.1%), diagnosis/classification(55.2%) | Institutional purchase failure (75.5%), high cost (18.4%), legal liability |
+| **Netherlands National Survey**<sup>33</sup> | Netherlands | ~33% of radiology departments (by 2022) | Chest CT, musculoskeletal radiographs | Cost, IT integration, lack of dedicated budgets |
+| **Moscow Experiment**<sup>34</sup> | Russia (Moscow) | 100% of state hospitals connected; actual usage rate not reported | Chest CT (COVID-19), Chest X-ray (multiple findings), Mammography | Prospective performance drops, non-representative datasets, segmentation quality |
 | **ESR Survey (2022 Baseline)**<sup>7</sup> | International (32 countries) | 40% with practical clinical experience | Diagnostic interpretation, image post-processing, triage | Unproven workload reduction (70% saw no change), reliability concerns |
 | **EuroAIM Survey (2018 Baseline)**<sup>11</sup> | Europe & Global | 20% | Breast, oncologic, thoracic, and neuroimaging (CAD, staging) | Legal responsibility (41%), job displacement fear, lack of knowledge |
-
-### eText 1. Generalizability and Context Specificity
-
-This study's findings derive from a single private outpatient radiology network in a European regulatory context, which limits direct generalizability across practice settings and jurisdictions. Four contextual factors warrant explicit consideration:
-
-1. **Academic vs. Private Practice Differences**: Private outpatient networks typically feature higher case volumes, fewer complex tertiary referrals, and less teaching overhead compared to academic medical centers. Academic settings may experience different latency profiles (due to research PACS requirements, teaching file workflows, or multi-institutional data sharing) and adoption patterns (trainees vs. attending-only users). The 91.4% adoption rate observed here may reflect private practice financial incentives and operational flexibility unavailable in academic bureaucracies.
-2. **Inpatient vs. Outpatient Workflow Distinctions**: Outpatient radiology prioritizes scheduled reporting workflows with lower acuity and fewer STAT examinations compared to emergency department or intensive care settings. Inpatient environments feature higher "Too Late" risk due to compressed decision timelines (e.g., trauma bay, stroke codes requiring 15-minute turnarounds). Conversely, inpatient workflows may tolerate asynchronous AI (e.g., overnight batch processing) that would be unacceptable in outpatient contexts. The latency thresholds and TAT baselines reported here reflect outpatient norms and may not translate to inpatient settings.
-3. **Single Commercial Orchestrator Dependency**: All findings reflect infrastructure performance of one commercial platform. Alternative orchestrators, on-premise deployments, or direct vendor integrations may exhibit substantially different latency profiles, reliability metrics, and interoperability challenges. The 72% data-routing latency proportion, while highlighting infrastructure's primacy, cannot be assumed universal across orchestration architectures.
-4. **European Data Privacy (GDPR/FADP) vs. US HIPAA Context**: This implementation operated under European data protection frameworks (GDPR, Swiss FADP), which permit cloud processing with explicit patient consent and stringent cross-border data transfer controls. US HIPAA requirements, while conceptually similar, impose different Business Associate Agreement (BAA) structures, breach notification timelines, and state-specific regulations (e.g., California CMIA) that may constrain cloud-based AI orchestration differently. The patient consent refusal rate (which created the non-AI comparison group) may vary substantially across regulatory contexts and cultural attitudes toward data sharing.
-
-Likely Generalizable Findings:
-
-- The primacy of infrastructure latency over algorithm speed as determinant of clinical utility
-- The "Too Late" phenomenon (timing misalignment between AI availability and interpretation) as universal workflow challenge
-- The inverse relationship between false-positive burden and user satisfaction (though magnitude varies)
-- The importance of continuous monitoring and governance frameworks for sustained adoption
-
-Context-Specific Findings:
-
-- The 26% trauma XR and 18% knee MRI TAT reduction magnitudes (baseline TAT, case mix, radiologist experience, and workflow protocols vary widely)
-- The 91.4% adoption rate (reflects this network's culture, financial model, and implementation maturity)
-- The specific latency values (3-minute median; infrastructure-dependent)
-- The NPS scores and specificity pattern severity (tool-specific, version-dependent, training-dependent)
-
-Institutions implementing similar AI ecosystems should interpret this study's infrastructure principles as generalizable while expecting substantial variation in quantitative outcomes based on local context. Multi-site validation across academic, community, and public hospital settings is needed to establish broader applicability.
 
 ## STROBE checklist
 
@@ -597,40 +570,40 @@ Supplementary Table. STROBE Checklist for Observational Studies
 | --- | --- | --- | --- | --- |
 | **Title and Abstract** |  |  |  |  |
 | 1a | **Title** | Indicate the study design with a commonly used term in the title or abstract | **Yes** | *Title includes "Observational Study" – design indicated.* |
-| 1b | **Abstract** | Provide an informative and balanced summary of what was done and found | **Yes** | *Structured abstract (Objective, Methods, Results, Discussion); 250 words. Includes effect sizes, p-values, and sample sizes.* |
+| 1b | **Abstract** | Provide an informative and balanced summary of what was done and found | **Yes** | *Structured abstract (Objective, Methods, Results, Discussion) within the 250-word limit; includes effect sizes, p-values and sample sizes.* |
 | **Introduction** |  |  |  |  |
 | 2 | **Background / Rationale** | Explain the scientific background and rationale for the investigation | **Yes** | *Introduction: Workforce shortage, adoption gap, infrastructure gap documented with citations.* |
-| 3 | **Objectives** | State specific objectives, including any pre-specified hypotheses | **Yes** | *Introduction: "This study quantifies PACS-to-PACS latency, temporal alignment…and radiologist sentiment." Two primary endpoints pre-specified in Methods.* |
+| 3 | **Objectives** | State specific objectives, including any pre-specified hypotheses | **Yes** | *Introduction: "This study quantifies PACS-to-PACS latency and the temporal alignment of AI results with report finalization…; compares report TAT between AI-available and concurrent non-AI workflows; and evaluates adoption and perceived value in a two-wave survey." Two primary endpoints pre-specified in Methods.* |
 | **Methods** |  |  |  |  |
-| 4 | **Study design** | Present key elements of study design early in the paper | **Yes** | *Methods: 'This retrospective observational study was conducted across a 20-center outpatient radiology network.* |
-| 5 | **Setting** | Describe the setting, locations, and relevant dates (enrolment, exposure, follow-up, data collection) | **Yes** | *Methods: 20 imaging centers, 13 clusters, March 2021–September 2025.* |
-| 6a | **Participants** | Give the eligibility criteria, sources and methods of selection of participants | **Yes** | *Methods: Three cohorts defined with eligibility criteria – Technical (96,874 exams, Sep 2023–Sep 2025), Report TAT (20,909 exams, Mar–Aug 2025), Survey (58 radiologists, May-Jun and Oct-Nov 2025).* |
-| 7 | **Variables** | Define all outcomes, exposures, predictors, potential confounders, and effect modifiers | **Yes** | *Methods: Outcomes (Total Latency, TAT, NPS, 'Too Late' rate), exposures (AI availability), and pre-specified confounders (age, sex, modality, site cluster) defined. 'Too Late' defined as binary: any case where report finalization HL7 timestamp preceded AI result availability HL7 timestamp, with no minimum delay threshold.* |
+| 4 | **Study design** | Present key elements of study design early in the paper | **Yes** | *Methods: "This retrospective observational study was conducted across a 20-center outpatient radiology network."* |
+| 5 | **Setting** | Describe the setting, locations, and relevant dates (enrolment, exposure, follow-up, data collection) | **Yes** | *Methods: 20-center outpatient radiology network in French-speaking Switzerland, grouped into 13 clusters; 4.5-year AI implementation program. Data periods: technical cohort September 2023–September 2025; TAT analysis cohort March–August 2025; survey May–June and October–November 2025.* |
+| 6a | **Participants** | Give the eligibility criteria, sources and methods of selection of participants | **Yes** | *Methods: three cohorts with eligibility criteria: technical cohort (96,874 consecutive examinations with complete DICOM/HL7 timestamp chains, September 2023–September 2025); TAT analysis cohort (20,909 examinations, March–August 2025, restricted to radiologists present in both AI and non-AI groups); survey cohort (58 board-certified radiologists, May–June and October–November 2025).* |
+| 7 | **Variables** | Define all outcomes, exposures, predictors, potential confounders, and effect modifiers | **Yes** | *Methods: outcomes (total latency, report TAT, "Too Late" rate, NPS and Likert perception scores), exposure (AI availability) and pre-specified potential confounders (age, sex, modality, site cluster) defined. "Too Late" defined as any case in which the HL7 report finalization timestamp preceded AI result availability.* |
 | 8 | **Data sources / measurement** | For each variable, give sources of data and details of methods of assessment (measurement) | **Yes** | *Methods: DICOM tags, AI processing metrics, HL7 ORM messages, and 23-item survey (eTable 2).* |
-| 9 | **Bias** | Describe any efforts to address potential sources of bias | **Yes** | *Methods: No formal bias mitigation applied (stated explicitly). Discussion lists unmeasured confounders. Limitations notes consent-based selection bias. The comparison is observational and potentially confounded by consent/refusal selection and operational factors; we report associations rather than causal effects.* |
-| 10 | **Study size** | Explain how the study size was arrived at | **Yes** | *Methods: "No formal sample size calculation was performed; the study used all available consecutive examinations; variability is conveyed via Interquartile ranges.”* |
-| 11 | **Quantitative variables** | Explain how quantitative variables were handled in the analyses | **Yes** | *Methods: Continuous variables reported as medians with IQR; Likert scales treated as ordinal with nonparametric tests.* |
-| 12a | **Statistical methods** | Describe all statistical methods, including those used to control for confounding | **Yes** | *Methods: Mann-Whitney U for TAT comparisons, Wilcoxon rank-sum for Likert, Fisher's exact for categorical. Primary and exploratory endpoints distinguished.* |
-| 12b | **Subgroups and interactions** | Describe any methods for examining subgroups and interactions | **Yes** | *Modality-level subgroups analyzed in Table 3 and eTable 4; experience subgroups in eTable 5; no formal interaction testing* |
-| 12c | **Missing data** | Explain how missing data were addressed | **Yes** | *Methods and Results: "Of ~389,000 total AI-processed examinations, 96,874 (24.9%) had complete latency timestamps." Missing data rates quantified: latency 24.9%, TAT 100%, survey 91.4%.* |
+| 9 | **Bias** | Describe any efforts to address potential sources of bias | **Yes** | *Methods: radiologist-level clustering addressed by linear mixed-effects models; sensitivity analysis restricted to adults 18–64 years; case mix compared by reported clinical condition (Table 1, eTable 6). Limitations: consent-based selection and unmeasured confounders (case complexity, time of day, dictation method). The comparison is observational; we report associations rather than causal effects.* |
+| 10 | **Study size** | Explain how the study size was arrived at | **Yes** | *Methods: "No a priori sample size calculation was performed; all consecutive eligible examinations during the study period were included."* |
+| 11 | **Quantitative variables** | Explain how quantitative variables were handled in the analyses | **Yes** | *Methods: continuous variables reported as means with SD or medians with IQR; Likert items treated as ordinal and analyzed with nonparametric tests; age and professional experience categorized (Tables 1 and 1B).* |
+| 12a | **Statistical methods** | Describe all statistical methods, including those used to control for confounding | **Yes** | *Methods: Mann-Whitney U tests and linear mixed-effects models (random intercept for radiologist) for TAT; Mann-Whitney U tests for between-wave NPS and Likert comparisons, Fisher's exact test for usage frequency, Wilcoxon signed-rank tests for paired respondents; Spearman correlation for experience; chi-square test for reported clinical condition (eTable 6). Primary and exploratory endpoints distinguished.* |
+| 12b | **Subgroups and interactions** | Describe any methods for examining subgroups and interactions | **Yes** | *Modality-level subgroups in Table 3, site clusters in eTable 4, experience subgroups in eTable 5; no formal interaction tests.* |
+| 12c | **Missing data** | Explain how missing data were addressed | **Yes** | *Methods and Results: complete-case analysis; the technical cohort is restricted to examinations with complete DICOM/HL7 timestamp chains; missing data rates reported (latency timestamps 96,874/~389,000, 24.9%; TAT 20,909/20,909, 100%; survey 53/58 in wave 1 and 52/58 in wave 2).* |
 | 12d | **Loss to follow-up** | If applicable, explain how loss to follow-up was addressed | **N/A** | *Cross-sectional design; no longitudinal follow-up of individual participants.* |
-| 12e | **Sensitivity analyses** | Describe any sensitivity analyses | **Yes** | *In sensitivity analysis restricted to patients aged 18–64, the trauma XR TAT reduction remained significant (from 4.0 to 3.0 minutes, 25% reduction, p<0.001).* |
+| 12e | **Sensitivity analyses** | Describe any sensitivity analyses | **Yes** | *Results: in a sensitivity analysis restricted to adults 18–64 years, trauma XR TAT decreased from 4.0 to 3.0 minutes (25%; p<0.001).* |
 | **Results** |  |  |  |  |
-| 13a | **Participants – numbers** | Report numbers of individuals at each stage of study | **Yes** | *Results and Figure 1: ~389,000 → 96,874 (technical) → 20,909 (clinical) → 58 radiologists (survey).* |
-| 13b | **Non-participation** | Give reasons for non-participation at each stage | **Yes** | *Results: 53/58 responded to wave 1, 52/58 to wave 2, 50 to both; the three never-respondents were interviewed and confirmed non-use. Methods: non-AI group (11.6%) defined by consent refusal or technical failure.* |
+| 13a | **Participants – numbers** | Report numbers of individuals at each stage of study | **Yes** | *Results and Figure 1: ~389,000 AI-processed examinations; technical cohort 96,874; TAT analysis cohort 20,909; survey cohort 58 radiologists.* |
+| 13b | **Non-participation** | Give reasons for non-participation at each stage | **Yes** | *Results: 53/58 radiologists responded to wave 1, 52/58 to wave 2, and 50 to both; nonuse was ascertained by individual interview of the nonrespondents. Limitations: the non-AI group (2,429 of 20,909 examinations, 11.6%) was defined by consent refusal or technical failure.* |
 | 13c | **Flow diagram** | Consider use of a flow diagram | **Yes** | *Figure 1: Study design and flowchart of data selection.* |
-| 14a | **Descriptive data** | Give characteristics of study participants and information on exposures and potential confounders | **Yes** | *Table 1: Demographics (age, sex) and modality distribution,* *and reported clinical condition by AI exposure group.* |
-| 14b | **Missing data** | Indicate number of participants with missing data for each variable of interest | **Yes** | *Results: "Missing data rates for key variables: latency timestamps 96,874/~389,000 (24.9%); TAT 20,909/20,909 (100%); survey completion 53/58 (91.4%)."* |
+| 14a | **Descriptive data** | Give characteristics of study participants and information on exposures and potential confounders | **Yes** | *Table 1: patient age, sex, modality distribution and reported clinical condition by AI exposure group; Table 1B: radiologist characteristics.* |
+| 14b | **Missing data** | Indicate number of participants with missing data for each variable of interest | **Yes** | *Results: "Missing data rates for key variables: latency timestamps available for 96,874/~389,000 examinations (24.9%); TAT available for 20,909/20,909 (100%); survey completion 53/58 (91.4%) in wave 1 and 52/58 (89.7%) in wave 2."* |
 | 15 | **Outcome data** | Report numbers of outcome events or summary measures | **Yes** | *Tables 2–5: Technical latency, TAT, NPS, and perception metrics reported with sample sizes.* |
 | 16a | **Main results** | Give unadjusted estimates and, if applicable, confounder-adjusted estimates with CIs and p-values | **Yes** | *Table 3: unadjusted (Mann-Whitney) and radiologist-adjusted (mixed model) TAT estimates with IQR and p-values; no patient-level confounder adjustment (stated in Methods and Limitations).* |
-| 16b | **Adjusted estimates** | Report category boundaries when continuous variables were categorized | **N/A** | *Continuous variables not categorized. Age groups in Table 1 use standard clinical categories.* |
+| 16b | **Adjusted estimates** | Report category boundaries when continuous variables were categorized | **Yes** | *Age categorized as 0–17, 18–44, 45–64 and ≥65 years (Table 1); professional experience as 3–5, 6–15 and ≥15 years (Table 1B).* |
 | 16c | **Relative and absolute** | If relevant, consider translating estimates into meaningful clinical measures | **Yes** | *Results and Discussion: FTE calculation (0.69 FTE unadjusted, 0.46 FTE radiologist-adjusted, from trauma XR).* |
 | 17 | **Other analyses** | Report other analyses done (e.g., subgroup, interaction, sensitivity) | **Yes** | *Site-level analysis (eTable 4); NPS longitudinal comparison (Table 5); perception metrics (Table 4). No interaction analyses performed.* |
 | **Discussion** |  |  |  |  |
-| 18 | **Key results** | Summarize key results with reference to study objectives | **Yes** | *Discussion: Key results summarized with reference to objectives. Key Points section provides 4 take-home messages.* |
-| 19 | **Limitations** | Discuss limitations, including sources of potential bias, imprecision, and multiplicity of analyses | **Yes** | *Limitations section: Single-network, retrospective design, consent-based selection, "Too Late" assumptions, multiple testing, commercial orchestrator dependency, COI disclosure, NPS sample size.* |
+| 18 | **Key results** | Summarize key results with reference to study objectives | **Yes** | *Discussion: key results summarized with reference to the study objectives; the Take home points give four key messages.* |
+| 19 | **Limitations** | Discuss limitations, including sources of potential bias, imprecision, and multiplicity of analyses | **Yes** | *Limitations: single network and retrospective design, one commercial orchestrator, royalty relationship with Keros, consent-based non-AI comparison group, unmeasured confounders, AI availability versus confirmed use and "Too Late" assumptions, multiple testing, modest per-tool NPS samples.* |
 | 20 | **Interpretation** | Give a cautious overall interpretation considering objectives, limitations, multiplicity, results from similar studies | **Yes** | *Discussion: Cautious interpretation with associational language.* |
-| 21 | **Generalizability** | Discuss the generalizability (external validity) of the study results | **Yes** | *eText 1 (Supplement): Extensive generalizability discussion covering academic vs. private practice, inpatient vs. outpatient, orchestrator dependency, and GDPR/HIPAA context.* |
+| 21 | **Generalizability** | Discuss the generalizability (external validity) of the study results | **Yes** | *Discussion, Limitations (study design and external validity): single privately managed European outpatient network and one commercial orchestrator; generalizability to academic, inpatient and non-European settings is limited.* |
 | **Other Information** |  |  |  |  |
 | 22 | **Funding** | Give the source of funding and the role of the funders for the present study | **Yes** | *Title page, Funding: Guerbet AG provided a research donation; Incepto Medical provided Keros software free of charge. Vendor relationships and royalties disclosed in the Conflict of Interest statement.* |
 
@@ -663,7 +636,7 @@ Credit means: the authors, the title, the journal, a link to the licence, and th
 
 ### Cite
 
-Morozov S, Heracleous N, Korka D, Thouly C, Dufour B, Novarina O, Rizk B. AI Latency, Report Turnaround Time, and Adoption in a Multi-Vendor AI Ecosystem: A Multi-Site Observational Study. J Am Coll Radiol. 2026. doi:10.1016/j.jacr.2026.09.026
+Morozov S, Heracleous N, Novarina O, Korka D, Dufour B, Thouly C, Rizk B. Artificial Intelligence Latency, Report Turnaround Time, and Adoption in a Multivendor Artificial Intelligence Ecosystem: A Multisite Observational Study. J Am Coll Radiol. 2026. doi:10.1016/j.jacr.2026.09.026
 
 - BibTeX: <https://aimonitoring.drsergeymorozov.com/cite/citation.bib>
 - RIS: <https://aimonitoring.drsergeymorozov.com/cite/citation.ris>
